@@ -1,0 +1,7 @@
+Bundled frontend libraries
+
+GSAP 3.15.0 and ScrollTrigger — GreenSock standard no-charge license: https://gsap.com/standard-license/
+@studio-freight/lenis 1.0.33 — https://github.com/darkroomengineering/lenis
+Swiper 11.2.10 — MIT license (see SWIPER-LICENSE.txt)
+
+No Webflow or HubSpot source assets are bundled.
