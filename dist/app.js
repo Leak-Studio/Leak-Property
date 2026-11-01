@@ -200,11 +200,54 @@ function img(name, alt = "", cls = "") {
   return `<img class="${cls}" src="${A + name}" alt="${alt}" loading="lazy" onerror="this.style.opacity='0'">`;
 }
 function header(light = false) {
-  return `<header class="topbar ${light ? "light" : "dark"}" id="topbar"><button class="navbtn" id="menuBtn" aria-expanded="false" aria-label="Buka menu"><i></i><span>Menu</span></button><a href="/" class="wordmark" aria-label="Leak Properti, beranda">LEAK PROPERTI</a><button class="callbtn" data-call>Jadwalkan panggilan</button></header>`;
+  return `<header class="topbar ${light ? "light" : "dark"}" id="topbar"><button class="navbtn" id="menuBtn" aria-controls="menuOverlay" aria-expanded="false" aria-label="Buka menu"><i></i><span>Menu</span></button><a href="/" class="wordmark" aria-label="Leak Properti, beranda">LEAK PROPERTI</a><button class="callbtn" data-call>Jadwalkan panggilan</button></header>`;
 }
 function overlays() {
-  return `<div class="overlay" id="menuOverlay" aria-hidden="true"><div class="menu-inner"><nav class="menu-links" aria-label="Navigasi utama"><a href="/#komposisi">Tentang</a><a href="/projects/">Proyek</a><a href="/#pendekatan">Pendekatan</a><a href="/blog/">Jurnal</a><a href="/#kontak">Kontak</a></nav></div></div><div class="modal" id="callModal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="callTitle"><button class="close" id="callClose" aria-label="Tutup">×</button><div class="eyebrow">[ Jadwalkan panggilan ]</div><h2 class="serif" id="callTitle">Percakapan dimulai di sini.</h2><p>Kalender pemesanan belum terhubung karena informasi kontak resmi Leak Properti belum tersedia. Tidak ada janji yang dapat dijadwalkan melalui situs contoh ini.</p><button class="submit" id="callGotIt">Mengerti</button></div></div><div class="modal" id="contactModal" aria-hidden="true"><div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="contactTitle"><button class="close" id="modalClose" aria-label="Tutup">×</button><div class="eyebrow">[ Kontak ]</div><h2 class="serif" id="contactTitle">Mulai dengan percakapan.</h2><p>Ini adalah rancangan situs contoh. Belum ada alamat email atau nomor kontak resmi untuk Leak Properti.</p><form class="formgrid" id="contactForm"><label>Nama<input name="name" required placeholder="Nama Anda"></label><label>Email<input name="email" type="email" required placeholder="nama@contoh.com"></label><label>Pesan<textarea name="message" rows="3" placeholder="Ceritakan kebutuhan Anda"></textarea></label><p class="note">Formulir demonstrasi ini tidak mengirim atau menyimpan data. Jangan masukkan informasi pribadi yang sensitif.</p><button class="submit" type="submit">Lihat konfirmasi demo ↗</button></form><p id="formMessage" class="note" role="status"></p></div></div><div class="cookie-banner" id="cookieBanner"><span>Prototipe ini tidak memakai analitik atau kuki pelacakan. Pilihan ini disimpan secara lokal di browser. <a href="/documents/cookie-policy/">Info kuki</a></span><button id="cookieAccept">Mengerti</button></div>`;
+  return `
+    <div class="overlay" id="menuOverlay" aria-hidden="true" inert>
+      <div class="menu-backdrop" data-menu-close></div>
+      <div class="menu-panel" data-lenis-prevent><div class="menu-inner">
+        <nav class="menu-links" aria-label="Navigasi utama">
+          <a href="/#komposisi">Tentang</a>
+          <a href="/projects/">Proyek</a>
+          <a href="/#pendekatan">Pendekatan</a>
+          <a href="/blog/">Jurnal</a>
+          <a href="/#kontak">Kontak</a>
+        </nav>
+        <p class="menu-note">Ruang × Rancangan × Pengalaman</p>
+      </div></div>
+    </div>
+    <div class="modal" id="callModal" aria-hidden="true" inert>
+      <div class="modal-card" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="callTitle">
+        <button class="close" id="callClose" aria-label="Tutup">×</button>
+        <div class="eyebrow">[ Jadwalkan panggilan ]</div>
+        <h2 class="serif" id="callTitle">Percakapan dimulai di sini.</h2>
+        <p>Kalender pemesanan belum terhubung karena informasi kontak resmi Leak Properti belum tersedia. Tidak ada janji yang dapat dijadwalkan melalui situs contoh ini.</p>
+        <button class="submit" id="callGotIt">Mengerti</button>
+      </div>
+    </div>
+    <div class="modal" id="contactModal" aria-hidden="true" inert>
+      <div class="modal-card" data-lenis-prevent role="dialog" aria-modal="true" aria-labelledby="contactTitle">
+        <button class="close" id="modalClose" aria-label="Tutup">×</button>
+        <div class="eyebrow">[ Kontak ]</div>
+        <h2 class="serif" id="contactTitle">Mulai dengan percakapan.</h2>
+        <p>Ini adalah rancangan situs contoh. Belum ada alamat email atau nomor kontak resmi untuk Leak Properti.</p>
+        <form class="formgrid" id="contactForm">
+          <label>Nama<input name="name" required placeholder="Nama Anda"></label>
+          <label>Email<input name="email" type="email" required placeholder="nama@contoh.com"></label>
+          <label>Pesan<textarea name="message" rows="3" placeholder="Ceritakan kebutuhan Anda"></textarea></label>
+          <p class="note">Formulir demonstrasi ini tidak mengirim atau menyimpan data. Jangan masukkan informasi pribadi yang sensitif.</p>
+          <button class="submit" type="submit">Lihat konfirmasi demo ↗</button>
+        </form>
+        <p id="formMessage" class="note" role="status"></p>
+      </div>
+    </div>
+    <div class="cookie-banner" id="cookieBanner">
+      <span>Prototipe ini tidak memakai analitik atau kuki pelacakan. Pilihan ini disimpan secara lokal di browser. <a href="/documents/cookie-policy/">Info kuki</a></span>
+      <button id="cookieAccept">Mengerti</button>
+    </div>`;
 }
+
 function footer() {
   return `<footer class="footer-cta" id="kontak"><div class="eyebrow">[ Hubungi kami ]</div><h2 class="serif reveal">Setiap ruang dimulai dari percakapan.</h2><button class="textlink" data-contact style="color:inherit;background:none;border-top:0;border-left:0;border-right:0">Mulai percakapan</button><div class="footer-bottom"><div>LEAK PROPERTI<br><span style="opacity:.6">Situs konsep · Konten ilustratif</span></div><nav><a href="/#komposisi">Tentang</a><a href="/projects/">Proyek</a><a href="/#pendekatan">Pendekatan</a><a href="/blog/">Jurnal</a><a href="/#kontak">Kontak</a></nav><div style="text-align:right"><a href="#top">Kembali ke atas ↑</a><br><a href="/documents/privacy-policy/">Privasi</a> · <a href="/documents/terms-of-service/">Ketentuan</a> · <a href="/documents/cookie-policy/">Kuki</a><br>© Leak Properti 2026</div></div><div class="footmark">LEAK PROPERTI</div></footer>`;
 }
@@ -215,10 +258,10 @@ function articleCard(a) {
   return `<a class="article-card reveal" href="/blog/${a.slug}/"><div class="image-wrap">${img(a.image, a.title)}</div><div class="eyebrow" style="margin-top:20px">${a.category} · Bacaan contoh</div><h3 class="serif">${a.title}</h3><span class="textlink">Baca artikel</span></a>`;
 }
 function preloader() {
-  return `<div class="preloader" id="preloader" aria-label="Memuat pengalaman Leak Properti"><div class="preloader-stack">${["gallery-courtyard.webp", "gallery-lounge.webp", "residence-bedroom.webp", "gallery-stair.webp", "residence-kitchen.webp", "residence-pool.webp", "gallery-suite.webp"].map((n, i) => `<div class="preloader-card preloader-card-${i + 1}">${img(n, "")}</div>`).join("")}</div><div class="preloader-title serif">LEAK PROPERTI</div><img class="preloader-center" src="${A}hero-villa.webp" alt=""></div>`;
+  return `<div class="preloader" id="preloader" aria-label="Memuat pengalaman Leak Properti"><div class="preloader-stack">${["gallery-courtyard.webp", "gallery-lounge.webp", "residence-bedroom.webp", "gallery-stair.webp", "residence-kitchen.webp", "residence-pool.webp", "gallery-suite.webp"].map((n, i) => `<div class="preloader-card preloader-card-${i + 1}">${img(n, "")}</div>`).join("")}</div><div class="preloader-title serif">LEAK PROPERTI</div><img class="preloader-center" src="${A}hero-interior-poster.jpg" alt=""></div>`;
 }
 function home() {
-  return `${preloader()}${header(true)}<main id="top"><section class="hero"><video autoplay muted loop playsinline poster="${A}hero-interior-poster.jpg"><source src="${A}hero-interior.mp4" type="video/mp4"></video><div class="hero-content"><div class="script">Ruang × Rancangan × Pengalaman</div><h1 class="serif">Ruang yang<br>dirancang utuh.</h1><p>Konsep hunian yang menyatukan fungsi, rasa, dan detail.</p></div><div class="hero-side"><span>Ruang</span><span>Desain</span><span>Pengalaman</span></div><a class="scrollcue" href="#komposisi">Gulir untuk menjelajah</a></section><section class="section page-pad" id="komposisi"><div class="sectionhead reveal"><span class="eyebrow">[ 01 / Komposisi ]</span><h2 class="serif">Sebuah rumah<br>adalah komposisi.</h2></div><div class="introcopy"><p class="lead">Dalam ruang yang dirancang baik, tidak ada yang terasa kebetulan. Garis, material, dan cahaya memiliki tempatnya.</p><div class="body"><p>Proporsi, material, dan cahaya dipertimbangkan bersama agar setiap bagian terasa menyatu.</p></div></div><div class="composition-tiles">${properties.map((p, i) => `<a class="composition-tile" href="/projects/${p.slug}/" aria-label="Lihat ${p.name}">${img(p.image, p.name)}<span>Lihat ↗</span></a>`).join("")}</div></section><section class="projects-home"><div class="page-pad projects-top reveal"><div><div class="eyebrow">[ 02 / Eksplorasi ]</div><h2 class="serif">Ruang pilihan.</h2></div><a class="textlink" href="/projects/">Lihat semua konsep</a></div><div class="project-show"><a class="project-photo" id="showImageLink" href="/projects/ruang-senja/">${img(properties[0].image, properties[0].name, "showImage")}</a><div class="project-info"><div class="eyebrow">[ Studi ruang / Ilustratif ]</div><h3 class="serif" id="showTitle">${properties[0].name.replace(" ", "<br>")}</h3><div class="stats"><div><small>Tahun konsep</small><strong id="showYear">2026</strong></div><div><small>Luas</small><strong>—</strong></div><div><small>Lokasi</small><strong id="showPlace">Jakarta</strong></div></div><a class="textlink" id="showLink" href="/projects/ruang-senja/">Jelajahi konsep</a><a class="textlink" id="showAllLink" href="/projects/">Semua konsep</a><div class="project-controls"><div class="rounds"><button class="round" id="prevProject" aria-label="Konsep sebelumnya">←</button><button class="round" id="nextProject" aria-label="Konsep berikutnya">→</button></div><span class="counter" id="projectCount">01 / 05</span></div><div class="project-progress"><i id="progressFill"></i></div></div></div></section><section class="section page-pad delivery" id="pendekatan"><div class="split-title reveal"><h2 class="serif">Proses yang jelas.<br>Ruang yang tenang.</h2><div><div class="eyebrow">[ 03 / Pendekatan ]</div><p>Setiap keputusan ruang sebaiknya punya alasan — dari kebutuhan sehari-hari hingga suasana yang ingin dirasakan.</p></div></div><div class="four-grid">${feature(1, "Mendengar dahulu", "Memahami kebiasaan, prioritas, dan harapan sebelum menggambar solusi.", "residence-living.webp")}${feature(2, "Menyusun arah", "Menghubungkan tata ruang, material, dan cahaya dalam satu bahasa desain.", "gallery-studio.webp")}${feature(3, "Meninjau detail", "Menguji setiap pilihan agar fungsi dan estetika saling menguatkan.", "gallery-plan.webp")}${feature(4, "Menjaga kesatuan", "Mempertahankan gagasan utama hingga semua elemen terasa selaras.", "residence-bedroom.webp")}</div></section><section class="section page-pad services"><div class="service-stage"><div class="eyebrow reveal">[ 04 / Lapisan ruang ]</div><h2 class="serif reveal">Pemikiran arsitektur.<br>Kepekaan desain.<br>Pengalaman hidup.</h2><div class="service-track">${[
+  return `${preloader()}${header(true)}<main id="top"><section class="hero"><video autoplay muted loop playsinline poster="${A}hero-interior-poster.jpg"><source src="${A}hero-interior.mp4" type="video/mp4"></video><div class="hero-content"><div class="script">Ruang × Rancangan × Pengalaman</div><h1 class="serif">Ruang yang<br>dirancang utuh.</h1><p>Konsep hunian yang menyatukan fungsi, rasa, dan detail.</p></div><div class="hero-side"><span>Ruang</span><span>Desain</span><span>Pengalaman</span></div><a class="scrollcue" href="#komposisi">Gulir untuk menjelajah</a></section><section class="section page-pad" id="komposisi"><div class="sectionhead reveal"><span class="eyebrow">[ 01 / Komposisi ]</span><h2 class="serif">Sebuah rumah<br>adalah komposisi.</h2></div><div class="introcopy"><p class="lead">Dalam ruang yang dirancang baik, tidak ada yang terasa kebetulan. Garis, material, dan cahaya memiliki tempatnya.</p><div class="body"><p>Proporsi, material, dan cahaya dipertimbangkan bersama agar setiap bagian terasa menyatu.</p></div></div><div class="composition-tiles">${properties.map((p, i) => `<a class="composition-tile" href="/projects/${p.slug}/" aria-label="Lihat ${p.name}">${img(p.image, p.name)}<span>Lihat ↗</span></a>`).join("")}</div></section><section class="projects-home"><div class="page-pad projects-top reveal"><div><div class="eyebrow">[ 02 / Eksplorasi ]</div><h2 class="serif">Ruang pilihan.</h2></div><a class="textlink" href="/projects/">Lihat semua konsep</a></div><div class="project-show"><div class="project-echoes" aria-hidden="true">${[1, 2].map(() => img(properties[0].image, "", "project-echo")).join("")}</div><a class="project-photo" id="showImageLink" href="/projects/ruang-senja/">${img(properties[0].image, properties[0].name, "showImage")}</a><div class="project-info"><div class="eyebrow">[ Studi ruang / Ilustratif ]</div><h3 class="serif" id="showTitle">${properties[0].name.replace(" ", "<br>")}</h3><div class="stats"><div><small>Tahun konsep</small><strong id="showYear">2026</strong></div><div><small>Luas</small><strong>—</strong></div><div><small>Lokasi</small><strong id="showPlace">Jakarta</strong></div></div><a class="textlink" id="showLink" href="/projects/ruang-senja/">Jelajahi konsep</a><a class="textlink" id="showAllLink" href="/projects/">Semua konsep</a><div class="project-controls"><div class="rounds"><button class="round" id="prevProject" aria-label="Konsep sebelumnya">←</button><button class="round" id="nextProject" aria-label="Konsep berikutnya">→</button></div><span class="counter" id="projectCount">01 / 05</span></div><div class="project-progress"><i id="progressFill"></i></div></div></div></section><section class="section page-pad delivery" id="pendekatan"><div class="split-title reveal"><h2 class="serif">Proses yang jelas.<br>Ruang yang tenang.</h2><div><div class="eyebrow">[ 03 / Pendekatan ]</div><p>Setiap keputusan ruang sebaiknya punya alasan — dari kebutuhan sehari-hari hingga suasana yang ingin dirasakan.</p></div></div><div class="four-grid">${feature(1, "Mendengar dahulu", "Memahami kebiasaan, prioritas, dan harapan sebelum menggambar solusi.", "residence-living.webp")}${feature(2, "Menyusun arah", "Menghubungkan tata ruang, material, dan cahaya dalam satu bahasa desain.", "gallery-studio.webp")}${feature(3, "Meninjau detail", "Menguji setiap pilihan agar fungsi dan estetika saling menguatkan.", "gallery-plan.webp")}${feature(4, "Menjaga kesatuan", "Mempertahankan gagasan utama hingga semua elemen terasa selaras.", "residence-bedroom.webp")}</div></section><section class="section page-pad services"><div class="service-stage"><div class="eyebrow reveal">[ 04 / Lapisan ruang ]</div><h2 class="serif reveal">Pemikiran arsitektur.<br>Kepekaan desain.<br>Pengalaman hidup.</h2><div class="service-track">${[
     [
       "01",
       "Arsitektur",
@@ -421,92 +464,137 @@ let content =
             : blogPage()
           : home();
 document.querySelector("#app").innerHTML = content;
+let lenisInstance;
+let preloading = false;
 const overlay = document.querySelector("#menuOverlay"),
   modal = document.querySelector("#contactModal"),
   callModal = document.querySelector("#callModal");
 function lock() {
-  document.body.classList.toggle(
-    "lock",
+  const locked =
+    preloading ||
     modal.classList.contains("open") ||
-      callModal.classList.contains("open") ||
-      (matchMedia("(max-width:767px)").matches &&
-        overlay.classList.contains("open")),
-  );
+    callModal.classList.contains("open") ||
+    (matchMedia("(max-width:767px)").matches &&
+      overlay.classList.contains("open"));
+  document.body.classList.toggle("lock", locked);
+  if (lenisInstance && locked !== lenisInstance.isStopped) {
+    if (locked) lenisInstance.stop();
+    else lenisInstance.start();
+  }
 }
 const menuBtn = document.querySelector("#menuBtn");
-function menuOpen(v) {
-  overlay.classList.toggle("open", v);
-  overlay.setAttribute("aria-hidden", String(!v));
-  menuBtn.setAttribute("aria-expanded", String(v));
-  menuBtn.querySelector("span").textContent = v ? "Tutup" : "Menu";
-  document.querySelector(".topbar").classList.toggle("menu-open", v);
+const desktopMenu = matchMedia(
+  "(min-width:768px) and (hover:hover) and (pointer:fine)",
+);
+let menuTimer;
+let menuPinned = false;
+function menuOpen(open, pinned = false) {
+  clearTimeout(menuTimer);
+  menuPinned = open && (pinned || menuPinned);
+  overlay.classList.toggle("open", open);
+  overlay.inert = !open;
+  overlay.setAttribute("aria-hidden", String(!open));
+  menuBtn.setAttribute("aria-expanded", String(open));
+  menuBtn.querySelector("span").textContent = open ? "Tutup" : "Menu";
+  document.querySelector(".topbar").classList.toggle("menu-open", open);
   lock();
 }
-menuBtn.onclick = (e) => {
-  e.stopPropagation();
-  menuOpen(!overlay.classList.contains("open"));
+menuBtn.onclick = (event) => {
+  event.stopPropagation();
+  menuOpen(!overlay.classList.contains("open") || !menuPinned, true);
 };
 menuBtn.onmouseenter = () => {
-  if (matchMedia("(min-width:768px)").matches) menuOpen(true);
+  if (desktopMenu.matches) menuOpen(true);
 };
-let menuTimer;
-document.querySelector(".topbar").addEventListener("mouseleave", () => {
-  if (matchMedia("(min-width:768px)").matches)
-    menuTimer = setTimeout(() => menuOpen(false), 250);
-});
+function scheduleMenuClose() {
+  if (desktopMenu.matches && !menuPinned)
+    menuTimer = setTimeout(() => menuOpen(false), 150);
+}
+menuBtn.addEventListener("mouseleave", scheduleMenuClose);
 overlay.addEventListener("mouseenter", () => clearTimeout(menuTimer));
-overlay.addEventListener("mouseleave", () => {
-  if (matchMedia("(min-width:768px)").matches) menuOpen(false);
+overlay.addEventListener("mouseleave", scheduleMenuClose);
+menuBtn.addEventListener("keydown", (event) => {
+  if (event.key === "ArrowDown") {
+    event.preventDefault();
+    menuOpen(true, true);
+    overlay.querySelector("a").focus();
+  }
 });
 overlay
-  .querySelectorAll("a")
-  .forEach((a) => a.addEventListener("click", () => menuOpen(false)));
-document.addEventListener("click", (e) => {
-  if (!e.target.closest("#menuBtn") && !e.target.closest("#menuOverlay"))
-    menuOpen(false);
+  .querySelectorAll("a,[data-menu-close]")
+  .forEach((link) => link.addEventListener("click", () => menuOpen(false)));
+document.addEventListener("click", (event) => {
+  if (!event.target.closest("#menuBtn,#menuOverlay")) menuOpen(false);
 });
-document.querySelectorAll("[data-contact]").forEach(
-  (b) =>
-    (b.onclick = () => {
-      modal.classList.add("open");
-      modal.setAttribute("aria-hidden", "false");
-      lock();
-    }),
-);
-document.querySelectorAll("[data-call]").forEach(
-  (b) =>
-    (b.onclick = () => {
-      callModal.classList.add("open");
-      callModal.setAttribute("aria-hidden", "false");
-      lock();
-    }),
-);
-function closeCall() {
-  callModal.classList.remove("open");
-  callModal.setAttribute("aria-hidden", "true");
+
+const returnFocus = new WeakMap();
+function setDialogOpen(dialog, open) {
+  if (open) {
+    menuOpen(false);
+    returnFocus.set(dialog, document.activeElement);
+  }
+  const changed = dialog.classList.contains("open") !== open;
+  dialog.classList.toggle("open", open);
+  dialog.inert = !open;
+  dialog.setAttribute("aria-hidden", String(!open));
   lock();
+  if (changed && open)
+    dialog.querySelector("button").focus({ preventScroll: true });
+  else if (changed) returnFocus.get(dialog)?.focus({ preventScroll: true });
+}
+document
+  .querySelectorAll("[data-contact]")
+  .forEach((button) => (button.onclick = () => setDialogOpen(modal, true)));
+document
+  .querySelectorAll("[data-call]")
+  .forEach((button) => (button.onclick = () => setDialogOpen(callModal, true)));
+function closeCall() {
+  setDialogOpen(callModal, false);
 }
 function closeContact() {
-  modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
-  lock();
+  setDialogOpen(modal, false);
 }
 document.querySelector("#callClose").onclick = closeCall;
 document.querySelector("#callGotIt").onclick = closeCall;
-callModal.addEventListener("click", (e) => {
-  if (e.target === callModal) closeCall();
-});
 document.querySelector("#modalClose").onclick = closeContact;
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) closeContact();
-});
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") {
+[modal, callModal].forEach((dialog) =>
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) setDialogOpen(dialog, false);
+  }),
+);
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    const menuWasOpen = overlay.classList.contains("open");
     closeContact();
     closeCall();
     menuOpen(false);
+    if (menuWasOpen) menuBtn.focus({ preventScroll: true });
+  }
+  if (event.key !== "Tab") return;
+  const activeDialog = [modal, callModal].find((dialog) =>
+    dialog.classList.contains("open"),
+  );
+  const container =
+    activeDialog ||
+    (overlay.classList.contains("open") && !desktopMenu.matches
+      ? overlay
+      : null);
+  if (!container) return;
+  const focusable = [
+    ...container.querySelectorAll("a[href],button,input,textarea"),
+  ].filter((element) => !element.disabled);
+  if (container === overlay) focusable.unshift(menuBtn);
+  const first = focusable[0],
+    last = focusable.at(-1);
+  if (event.shiftKey && document.activeElement === first) {
+    event.preventDefault();
+    last.focus();
+  } else if (!event.shiftKey && document.activeElement === last) {
+    event.preventDefault();
+    first.focus();
   }
 });
+
 document.querySelector("#contactForm").addEventListener("submit", (e) => {
   e.preventDefault();
   document.querySelector("#formMessage").textContent =
@@ -533,96 +621,329 @@ if (copyLink)
         "Tidak dapat menyalin tautan";
     }
   };
-if (
-  window.gsap &&
-  window.ScrollTrigger &&
-  !matchMedia("(prefers-reduced-motion: reduce)").matches
-) {
-  gsap.registerPlugin(ScrollTrigger);
-  if (window.SplitText) gsap.registerPlugin(SplitText);
-  document.querySelectorAll(".reveal").forEach((el) => {
-    const heading = el.matches("h1,h2,h3") || !!el.querySelector("h2");
-    const duration = heading
-      ? 1.25
-      : el.classList.contains("eyebrow")
-        ? 0.3
-        : 0.6;
+const motionPreference = matchMedia("(prefers-reduced-motion: reduce)");
+let stopSmoothScroll = () => {};
+
+function setupSmoothScroll() {
+  stopSmoothScroll();
+  lenisInstance = undefined;
+  if (!window.Lenis || motionPreference.matches) return;
+
+  const lenis = new Lenis({
+    lerp: 0.1,
+    wheelMultiplier: 1,
+    smoothTouch: false,
+  });
+  lenisInstance = lenis;
+  if (window.gsap && window.ScrollTrigger) {
+    const tick = (time) => lenis.raf(time * 1000);
+    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.add(tick);
+    gsap.ticker.lagSmoothing(0);
+    stopSmoothScroll = () => {
+      gsap.ticker.remove(tick);
+      lenis.destroy();
+    };
+  } else {
+    let frame;
+    const tick = (time) => {
+      lenis.raf(time);
+      frame = requestAnimationFrame(tick);
+    };
+    frame = requestAnimationFrame(tick);
+    stopSmoothScroll = () => {
+      cancelAnimationFrame(frame);
+      lenis.destroy();
+    };
+  }
+  lock();
+}
+
+setupSmoothScroll();
+motionPreference.addEventListener("change", setupSmoothScroll);
+matchMedia("(max-width: 767px)").addEventListener("change", lock);
+
+document.addEventListener("click", (event) => {
+  const link = event.target.closest('a[href*="#"]');
+  if (
+    !link ||
+    event.defaultPrevented ||
+    event.button !== 0 ||
+    event.metaKey ||
+    event.ctrlKey ||
+    event.shiftKey ||
+    event.altKey ||
+    link.hasAttribute("download") ||
+    link.target === "_blank"
+  )
+    return;
+  const url = new URL(link.href);
+  if (
+    url.origin !== location.origin ||
+    url.pathname !== location.pathname ||
+    !url.hash
+  )
+    return;
+  const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+  if (!target) return;
+  event.preventDefault();
+  menuOpen(false);
+  history.pushState(null, "", url.hash);
+  if (lenisInstance) lenisInstance.scrollTo(target);
+  else
+    target.scrollIntoView({
+      behavior: motionPreference.matches ? "instant" : "smooth",
+    });
+});
+
+function initReveals() {
+  document.querySelectorAll(".reveal:not(.service-row)").forEach((element) => {
+    if (element.closest(".services")) return;
+    const heading =
+      element.matches("h1,h2,h3") || !!element.querySelector("h2");
     gsap.fromTo(
-      el,
-      {
-        opacity: 0,
-        y: heading ? 0 : 22,
-        filter: heading ? "blur(0px)" : "blur(8px)",
-      },
+      element,
+      { opacity: 0, y: heading ? 0 : 22 },
       {
         opacity: 1,
         y: 0,
-        filter: "blur(0px)",
-        duration,
+        duration: heading
+          ? 1.25
+          : element.classList.contains("eyebrow")
+            ? 0.3
+            : 0.6,
         ease: "power2.out",
-        scrollTrigger: { trigger: el, start: "top 80%", once: true },
-        onComplete: () => el.classList.add("visible"),
+        scrollTrigger: { trigger: element, start: "top 80%", once: true },
+        onComplete: () =>
+          gsap.set(element, { clearProps: "opacity,transform" }),
       },
     );
   });
-  if (window.SplitText) {
-    document
-      .querySelectorAll(
-        ".sectionhead h2,.split-title h2,.services h2,.about h2,.journal h2,.faq h2,.footer-cta h2",
-      )
-      .forEach((h) => {
-        h.setAttribute(
-          "aria-label",
-          h.innerHTML
-            .replace(/<br\s*\/?>/gi, " ")
-            .replace(/<[^>]*>/g, "")
-            .replace(/\s+/g, " ")
-            .trim(),
-        );
-        const split = new SplitText(h, { type: "words,chars" });
-        gsap.fromTo(
-          split.chars,
-          { opacity: 0, yPercent: 20 },
-          {
-            opacity: 1,
-            yPercent: 0,
-            duration: 1.5,
-            stagger: 0.03,
-            ease: "power2.out",
-            scrollTrigger: { trigger: h, start: "top 80%", once: true },
-          },
-        );
+  if (!window.SplitText) return;
+  document
+    .querySelectorAll(
+      ".sectionhead h2,.split-title h2,.services h2,.about h2,.journal h2,.faq h2,.footer-cta h2",
+    )
+    .forEach((heading) => {
+      const split = new SplitText(heading, {
+        type: "words,chars",
+        wordsClass: "motion-word",
       });
-  }
-} else {
-  const obs = new IntersectionObserver(
-    (entries) =>
-      entries.forEach((e) => {
-        if (e.isIntersecting) {
-          e.target.classList.add("visible");
-          obs.unobserve(e.target);
-        }
-      }),
-    { threshold: 0.08 },
-  );
-  document.querySelectorAll(".reveal").forEach((el) => obs.observe(el));
+      gsap.fromTo(
+        split.chars,
+        { opacity: 0, yPercent: 20 },
+        {
+          opacity: 1,
+          yPercent: 0,
+          duration: 1.5,
+          stagger: 0.03,
+          ease: "power2.out",
+          scrollTrigger: { trigger: heading, start: "top 80%", once: true },
+        },
+      );
+    });
 }
-let lenisInstance;
-if (window.Lenis && !matchMedia("(prefers-reduced-motion: reduce)").matches) {
-  const lenis = new Lenis({ lerp: 0.1, wheelMultiplier: 1 });
-  lenisInstance = lenis;
-  if (window.gsap && window.ScrollTrigger) {
-    lenis.on("scroll", ScrollTrigger.update);
-    gsap.ticker.add((t) => lenis.raf(t * 1000));
-    gsap.ticker.lagSmoothing(0);
+
+function initServiceScene(desktop) {
+  const services = document.querySelector(".services");
+  if (!services) return;
+  const track = services.querySelector(".service-track");
+  const stage = services.querySelector(".service-stage");
+  const intro = stage.querySelectorAll(":scope > h2, :scope > .eyebrow");
+  const timeline = gsap.timeline({
+    defaults: { ease: "none" },
+    scrollTrigger: {
+      trigger: services,
+      start: "top top",
+      end: "bottom bottom",
+      scrub: true,
+      invalidateOnRefresh: true,
+    },
+  });
+  timeline
+    .fromTo(
+      track,
+      {
+        x: () => stage.clientWidth * 0.56,
+        y: () => stage.clientHeight * 0.5,
+        scale: 0.49,
+        opacity: 0,
+        transformOrigin: "top left",
+      },
+      {
+        opacity: 1,
+        duration: 0.15,
+      },
+      0.85,
+    )
+    .to(
+      track,
+      {
+        x: () => (desktop ? stage.clientWidth * 0.07 : 0),
+        y: 0,
+        scale: 1,
+        duration: 1,
+      },
+      1,
+    )
+    .fromTo(intro, { opacity: 1 }, { opacity: 0, duration: 0.5 }, 1.4);
+
+  if (desktop) {
+    [0.14, 0.334, 0.53].forEach((offset, index) => {
+      timeline.to(
+        track,
+        { x: () => -stage.clientWidth * offset, duration: 1 },
+        index + 2,
+      );
+    });
+    timeline
+      .to(
+        track,
+        { x: () => -(track.scrollWidth - stage.clientWidth), duration: 1 },
+        5,
+      )
+      .to({}, { duration: 1 }, 6);
   } else {
-    function raf(t) {
-      lenis.raf(t);
-      requestAnimationFrame(raf);
-    }
-    requestAnimationFrame(raf);
+    timeline
+      .to(track, { x: () => -stage.clientWidth, duration: 1 }, 2)
+      .to(
+        track,
+        { x: () => -(track.scrollWidth - stage.clientWidth), duration: 1 },
+        3,
+      )
+      .to({}, { duration: 1 }, 4);
   }
 }
+
+function initProjectScene() {
+  const showcase = document.querySelector(".project-show");
+  if (!showcase) return;
+  gsap
+    .timeline({
+      scrollTrigger: {
+        trigger: ".projects-home",
+        start: "top top",
+        end: () =>
+          "+=" +
+          Math.min(
+            758,
+            showcase.parentElement.clientHeight - showcase.clientHeight,
+          ),
+        scrub: true,
+        invalidateOnRefresh: true,
+      },
+    })
+    .set(".project-photo", { scale: 0.66, transformOrigin: "center" })
+    .set(".project-echo", {
+      scale: 0.66,
+      opacity: 1,
+      transformOrigin: "center",
+    })
+    .to({}, { duration: 1 })
+    .to(
+      ".project-echo:first-child",
+      { scale: 1.5, duration: 1, ease: "none" },
+      0.9,
+    )
+    .to(
+      ".project-echo:last-child",
+      { scale: 1.25, duration: 1, ease: "none" },
+      0.95,
+    )
+    .to(".project-photo", { scale: 1, duration: 1, ease: "none" }, 1)
+    .to(".project-echo", { opacity: 0, duration: 0.12 }, 1.9)
+    .fromTo(
+      [".project-progress", "#projectCount"],
+      { opacity: 0 },
+      { opacity: 1, duration: 0.3 },
+      1.65,
+    )
+    .to(
+      "#showTitle",
+      {
+        x: () => -showcase.clientWidth * 0.02,
+        y: () => showcase.clientHeight * 0.1,
+        duration: 1,
+        ease: "none",
+      },
+      1,
+    )
+    .to(
+      ".project-info .stats",
+      {
+        x: () => showcase.clientWidth * 0.03,
+        y: () => showcase.clientHeight * 0.15,
+        duration: 1,
+        ease: "none",
+      },
+      1,
+    );
+}
+
+function initCompositionScene() {
+  gsap
+    .timeline({
+      defaults: { ease: "none", duration: 1 },
+      scrollTrigger: {
+        trigger: "#komposisi",
+        start: "top -100%",
+        end: "top -112.5%",
+        scrub: true,
+      },
+    })
+    .to(
+      "#komposisi .composition-tile:nth-child(4),#komposisi .composition-tile:nth-child(5)",
+      { y: -110 },
+      0,
+    )
+    .to("#komposisi .lead", { y: -204 }, 0)
+    .to("#komposisi .body", { y: -309 }, 0);
+}
+
+if (window.gsap && window.ScrollTrigger) {
+  gsap.registerPlugin(ScrollTrigger);
+  if (window.SplitText) gsap.registerPlugin(SplitText);
+  const media = gsap.matchMedia();
+  document.fonts.ready.then(() => {
+    media.add(
+      {
+        motion: "(prefers-reduced-motion: no-preference)",
+        desktop: "(min-width: 801px)",
+        projectLayout: "(min-width: 768px)",
+      },
+      (context) => {
+        if (!context.conditions.motion) return;
+        document.documentElement.classList.add("scroll-scenes");
+        initReveals();
+        initServiceScene(context.conditions.desktop);
+        if (context.conditions.projectLayout && path === "/") {
+          initProjectScene();
+          initCompositionScene();
+        }
+        return () => document.documentElement.classList.remove("scroll-scenes");
+      },
+    );
+    lenisInstance?.resize();
+    ScrollTrigger.refresh();
+  });
+}
+
+let refreshFrame;
+function refreshScrollLayout() {
+  cancelAnimationFrame(refreshFrame);
+  refreshFrame = requestAnimationFrame(() => {
+    lenisInstance?.resize();
+    window.ScrollTrigger?.refresh();
+  });
+}
+
+window.addEventListener("load", refreshScrollLayout, { once: true });
+document.querySelectorAll(".faq-a").forEach((answer) => {
+  answer.addEventListener("transitionend", (event) => {
+    if (event.propertyName === "max-height") refreshScrollLayout();
+  });
+});
+
 if (window.Swiper)
   document.querySelectorAll(".listing-gallery").forEach((g) => {
     const swiper = new Swiper(g.querySelector(".project-swiper"), {
@@ -647,63 +968,16 @@ if (window.Swiper)
 const faqShow = document.querySelector("#faqShow");
 if (faqShow)
   faqShow.onclick = () => {
+    const expanded = faqShow.getAttribute("aria-expanded") !== "true";
     document
       .querySelectorAll(".faq-more")
-      .forEach((x) => x.classList.add("visible-extra"));
-    faqShow.remove();
+      .forEach((x) => x.classList.toggle("visible-extra", expanded));
+    faqShow.setAttribute("aria-expanded", String(expanded));
+    faqShow.textContent = expanded
+      ? "Tampilkan lebih sedikit ↑"
+      : "Lihat pertanyaan lain ↓";
+    refreshScrollLayout();
   };
-if (
-  window.gsap &&
-  window.ScrollTrigger &&
-  !matchMedia("(prefers-reduced-motion: reduce)").matches
-) {
-  const track = document.querySelector(".service-track"),
-    svc = document.querySelector(".services");
-  if (track && svc) {
-    const w = innerWidth,
-      h = innerHeight,
-      mobile = w <= 767;
-    gsap.set(track, {
-      x: w * 0.56,
-      y: h * 0.5,
-      scale: 0.49,
-      opacity: 0,
-      transformOrigin: "top left",
-    });
-    const ch = gsap.timeline({
-      scrollTrigger: {
-        trigger: svc,
-        start: "top top",
-        end: () => "+=" + (mobile ? innerHeight * 6 : innerHeight * 7),
-        scrub: 1,
-        invalidateOnRefresh: true,
-      },
-    });
-    ch.to({}, { duration: 1 }, 0)
-      .to(track, { opacity: 1, duration: 0.15 }, 0.85)
-      .to(
-        track,
-        { x: mobile ? 0 : w * 0.07, y: 0, scale: 1, duration: 1, ease: "none" },
-        1,
-      )
-      .to(
-        ".service-stage>h2,.service-stage>.eyebrow",
-        { opacity: 0, duration: 0.5 },
-        1.4,
-      );
-    if (mobile) {
-      ch.to(track, { x: -w, duration: 1, ease: "none" }, 2)
-        .to(track, { x: -2 * w, duration: 1, ease: "none" }, 3)
-        .to({}, { duration: 2 }, 4);
-    } else {
-      ch.to(track, { x: -w * 0.14, duration: 1, ease: "none" }, 2)
-        .to(track, { x: -w * 0.334, duration: 1, ease: "none" }, 3)
-        .to(track, { x: -w * 0.53, duration: 1, ease: "none" }, 4)
-        .to(track, { x: -w * 0.737, duration: 1, ease: "none" }, 5)
-        .to({}, { duration: 1 }, 6);
-    }
-  }
-}
 document.querySelectorAll(".faq-q").forEach(
   (b) =>
     (b.onclick = () => {
@@ -715,26 +989,49 @@ document.querySelectorAll(".faq-q").forEach(
 );
 if (path === "/") {
   let n = 0;
-  function showProject(i) {
-    n = (i + properties.length) % properties.length;
-    let p = properties[n],
-      image = document.querySelector(".showImage");
-    image.style.opacity = 0.3;
-    setTimeout(() => {
-      image.src = A + p.image;
-      image.alt = p.name;
+  let projectRequest = 0;
+  let projectTransition;
+  async function showProject(index) {
+    n = (index + properties.length) % properties.length;
+    const nextIndex = n;
+    const request = ++projectRequest;
+    const property = properties[n];
+    const image = document.querySelector(".showImage");
+    const preload = new Image();
+    preload.src = A + property.image;
+    await preload.decode().catch(() => {});
+    if (request !== projectRequest) return;
+    const render = () => {
+      image.src = preload.src;
+      image.alt = property.name;
+      document
+        .querySelectorAll(".project-echo")
+        .forEach((echo) => (echo.src = preload.src));
+      document.querySelector("#showTitle").innerHTML = property.name.replace(
+        " ",
+        "<br>",
+      );
+      document.querySelector("#showYear").textContent = property.year;
+      document.querySelector("#showPlace").textContent = property.place;
+      document.querySelector("#showLink").href = `/projects/${property.slug}/`;
+      document.querySelector("#showImageLink").href =
+        `/projects/${property.slug}/`;
+      document.querySelector("#projectCount").textContent =
+        `0${nextIndex + 1} / 05`;
+      document.querySelector("#progressFill").style.width =
+        `${(nextIndex + 1) * 20}%`;
+    };
+    projectTransition?.kill();
+    if (window.gsap && !motionPreference.matches) {
+      projectTransition = gsap
+        .timeline()
+        .to(image, { opacity: 0, duration: 0.16, ease: "power2.out" })
+        .call(render)
+        .to(image, { opacity: 1, duration: 0.46, ease: "power2.out" });
+    } else {
+      render();
       image.style.opacity = 1;
-    }, 160);
-    document.querySelector("#showTitle").innerHTML = p.name.replace(
-      " ",
-      "<br>",
-    );
-    document.querySelector("#showYear").textContent = p.year;
-    document.querySelector("#showPlace").textContent = p.place;
-    document.querySelector("#showLink").href = `/projects/${p.slug}/`;
-    document.querySelector("#showImageLink").href = `/projects/${p.slug}/`;
-    document.querySelector("#projectCount").textContent = `0${n + 1} / 05`;
-    document.querySelector("#progressFill").style.width = `${(n + 1) * 20}%`;
+    }
   }
   document.querySelector("#prevProject").onclick = () => showProject(n - 1);
   document.querySelector("#nextProject").onclick = () => showProject(n + 1);
@@ -748,191 +1045,160 @@ if (path === "/") {
     let dx = e.changedTouches[0].clientX - sx;
     if (Math.abs(dx) > 50) showProject(n + (dx < 0 ? 1 : -1));
   });
-  if (
-    window.gsap &&
-    window.ScrollTrigger &&
-    !matchMedia("(prefers-reduced-motion: reduce)").matches
-  ) {
-    const morph = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".projects-home",
-        start: "top top",
-        end: "+=758",
-        scrub: true,
-      },
-    });
-    morph
-      .set(".project-photo", {
-        top: "17%",
-        right: "17%",
-        bottom: "17%",
-        left: "17%",
-      })
-      .to({}, { duration: 1 })
-      .to(".project-photo", {
-        top: 0,
-        right: 0,
-        bottom: 0,
-        left: 0,
-        duration: 1,
-        ease: "none",
-      })
-      .fromTo(
-        [".project-progress", "#projectCount"],
-        { opacity: 0 },
-        { opacity: 1, duration: 0.3 },
-        1.65,
-      )
-      .to(
-        "#showTitle",
-        { top: "51%", left: "3%", duration: 1, ease: "none" },
-        1,
-      )
-      .to(
-        ".project-info .stats",
-        { top: "49%", right: "2%", duration: 1, ease: "none" },
-        1,
-      );
-  }
-  const bar = document.querySelector("#topbar");
-  let onscroll = () => {
-    const pr = document.querySelector(".project-show").getBoundingClientRect(),
-      svc = document.querySelector(".services").getBoundingClientRect(),
-      foot = document.querySelector(".footer-cta").getBoundingClientRect();
-    bar.classList.toggle(
-      "light",
-      scrollY < innerHeight * 0.78 ||
-        (pr.top < 70 && pr.bottom > 70) ||
-        (svc.top < 70 && svc.bottom > 70) ||
-        (foot.top < 70 && foot.bottom > 70),
-    );
-  };
-  window.addEventListener("scroll", onscroll, { passive: true });
-  onscroll();
 }
 const globalBar = document.querySelector("#topbar");
-function updateHeaderTone() {
-  const darkSections = document.querySelectorAll(
+const darkSections = [
+  ...document.querySelectorAll(
     ".hero,.project-show,.services,.footer-cta,.detail-hero,.article-cover",
-  );
-  let overDark = [...darkSections].some((el) => {
-    const r = el.getBoundingClientRect();
-    return r.top < 65 && r.bottom > 65;
+  ),
+];
+let lastScrollY = scrollY;
+let headerFrame;
+function updateHeader() {
+  headerFrame = undefined;
+  const now = scrollY;
+  const overDark = darkSections.some((section) => {
+    const rect = section.getBoundingClientRect();
+    return rect.top < 65 && rect.bottom > 65;
   });
+  const open =
+    overlay.classList.contains("open") ||
+    modal.classList.contains("open") ||
+    callModal.classList.contains("open");
   globalBar.classList.toggle("light", overDark);
   globalBar.classList.toggle("dark", !overDark);
+  if (!open && (now < innerHeight * 0.05 || Math.abs(now - lastScrollY) > 8)) {
+    globalBar.classList.toggle(
+      "is-hidden",
+      now > lastScrollY && now >= innerHeight * 0.05,
+    );
+    lastScrollY = now;
+  }
 }
-window.addEventListener("scroll", updateHeaderTone, { passive: true });
-updateHeaderTone();
-if (path === "/" && document.querySelector("#preloader")) {
+window.addEventListener(
+  "scroll",
+  () => {
+    if (headerFrame === undefined)
+      headerFrame = requestAnimationFrame(updateHeader);
+  },
+  { passive: true },
+);
+window.addEventListener("resize", updateHeader, { passive: true });
+updateHeader();
+function initPreloader() {
   const pre = document.querySelector("#preloader");
-  const reduceMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (!pre) return;
   if (
     sessionStorage.getItem("preloaderShown") === "1" ||
-    reduceMotion ||
-    !window.gsap
+    motionPreference.matches ||
+    !window.gsap ||
+    location.hash
   ) {
     pre.remove();
     sessionStorage.setItem("preloaderShown", "1");
-  } else {
-    document.body.classList.add("has-preloader");
-    lenisInstance?.stop();
-    const cards = [...pre.querySelectorAll(".preloader-card")],
-      title = pre.querySelector(".preloader-title"),
-      center = pre.querySelector(".preloader-center");
-    gsap.set(cards, { opacity: 0 });
-    gsap.set(
-      [
-        title,
-        document.querySelector(".topbar"),
-        document.querySelector(".hero-content"),
-      ],
-      { opacity: 0 },
+    return;
+  }
+  preloading = true;
+  document.body.classList.add("has-preloader");
+  lock();
+  const cards = [...pre.querySelectorAll(".preloader-card")];
+  const title = pre.querySelector(".preloader-title");
+  const center = pre.querySelector(".preloader-center");
+  const video = document.querySelector(".hero video");
+  const heroContent = document.querySelector(".hero-content");
+  const mobile = matchMedia("(max-width:767px)").matches;
+  const width = innerWidth;
+  const clip = (widthRatio, heightRatio) => {
+    const vertical = Math.max(
+      0,
+      (1 - (width * heightRatio) / innerHeight) * 50,
     );
-    const w = innerWidth,
-      mobile = matchMedia("(max-width:767px)").matches,
-      tl = gsap.timeline({
-        delay: 1,
-        onComplete: () => {
-          sessionStorage.setItem("preloaderShown", "1");
-          pre.remove();
-          lenisInstance?.start();
-        },
-      });
-    cards.forEach((card, i) => {
-      tl.fromTo(
+    const horizontal = (1 - widthRatio) * 50;
+    return `inset(${vertical}% ${horizontal}% ${vertical}% ${horizontal}%)`;
+  };
+  gsap.set(cards, { opacity: 0 });
+  gsap.set(video, { clipPath: clip(0.04, 0.04) });
+  gsap.set(globalBar, { opacity: 0 });
+  gsap.set(heroContent, { opacity: 0, yPercent: 3 });
+  const timeline = gsap.timeline({
+    delay: 1,
+    onComplete: () => {
+      sessionStorage.setItem("preloaderShown", "1");
+      pre.remove();
+      gsap.set(video, { clearProps: "clipPath" });
+      preloading = false;
+      lock();
+      refreshScrollLayout();
+    },
+  });
+  cards.forEach((card, index) => {
+    timeline
+      .fromTo(
         card,
-        { opacity: 0, y: (i % 2 ? -1 : 1) * w * (mobile ? 0.0625 : 0.022) },
-        { opacity: 1, y: 0, duration: 0.76, ease: "power2.out" },
-        i * 0.07,
-      );
-      tl.to(
+        { opacity: 0, y: 0 },
+        {
+          opacity: 1,
+          y: (index % 2 ? -1 : 1) * width * (mobile ? 0.0625 : 0.022),
+          duration: 0.76,
+          ease: "power2.out",
+        },
+        index * 0.07,
+      )
+      .to(
         card,
         {
-          x: (i - 3) * w * (mobile ? 0.125 : 0.105),
+          x: (index - 3) * width * (mobile ? 0.125 : 0.105),
           duration: 0.65,
           ease: "power2.inOut",
         },
-        1.05 + i * 0.02,
+        1.05 + index * 0.02,
       );
-    });
-    tl.to(title, { opacity: 1, duration: 0.7, ease: "power2.out" }, 1.53);
-    tl.to(
-      center,
+  });
+  timeline
+    .to(
+      title,
+      { opacity: 0, yPercent: 5, duration: 0.7, ease: "power2.out" },
+      mobile ? 1.37 : 1.53,
+    )
+    .to(
+      pre,
+      { backgroundColor: "transparent", duration: 0.5, ease: "power2.out" },
+      mobile ? 1.84 : 1.9,
+    )
+    .to(center, { opacity: 0, duration: 0.25 }, mobile ? 1.74 : 1.9)
+    .to(
+      video,
       {
-        width: mobile ? "60svw" : "42svw",
-        height: mobile ? "45svw" : "28svw",
+        clipPath: clip(mobile ? 0.6 : 0.42, mobile ? 0.45 : 0.28),
         duration: mobile ? 0.54 : 0.77,
         ease: "power2.inOut",
       },
       mobile ? 1.74 : 1.9,
-    );
-    tl.to(
-      center,
+    )
+    .to(
+      video,
       {
-        width: "100svw",
-        height: "100svh",
+        clipPath: "inset(0% 0% 0% 0%)",
         duration: mobile ? 0.65 : 0.76,
         ease: "power2.inOut",
       },
       mobile ? 2.29 : 2.68,
-    );
-    tl.to(
-      document.querySelector(".hero-content"),
-      { opacity: 1, duration: 0.45, ease: "power2.out" },
+    )
+    .to(cards, { opacity: 0, duration: 0.25 }, mobile ? 2.25 : 2.78)
+    .to(
+      heroContent,
+      { opacity: 1, yPercent: 0, duration: 0.45, ease: "power2.out" },
       mobile ? 2.33 : 2.76,
-    );
-    tl.to(
-      document.querySelector(".topbar"),
+    )
+    .to(
+      globalBar,
       { opacity: 1, duration: 0.6, ease: "power2.out" },
       mobile ? 2.23 : 2.76,
-    );
-    tl.to(
-      pre,
-      { opacity: 0, duration: 0.36, ease: "power2.out" },
-      mobile ? 3.05 : 3.5,
-    );
-  }
-}
-let lastScrollY = scrollY;
-window.addEventListener(
-  "scroll",
-  () => {
-    const now = scrollY,
-      delta = now - lastScrollY;
-    lastScrollY = now;
-    if (
-      overlay.classList.contains("open") ||
-      modal.classList.contains("open") ||
-      callModal.classList.contains("open")
     )
-      return;
-    if (now < innerHeight * 0.05 || delta < -2)
-      globalBar.classList.remove("is-hidden");
-    else if (delta > 2) globalBar.classList.add("is-hidden");
-  },
-  { passive: true },
-);
+    .to(pre, { opacity: 0, duration: 0.25 }, mobile ? 3.05 : 3.5);
+}
+initPreloader();
+
 if (matchMedia("(hover:hover) and (pointer:fine)").matches) {
   document.querySelectorAll(".composition-tile").forEach((tile) => {
     const follower = tile.querySelector("span");
@@ -940,14 +1206,18 @@ if (matchMedia("(hover:hover) and (pointer:fine)").matches) {
       ty = tile.clientHeight / 2,
       x = tx,
       y = ty,
-      active = false;
+      active = false,
+      followerFrame;
     function tick() {
+      followerFrame = undefined;
       if (!active) return;
       x += (tx - x) * 0.12;
       y += (ty - y) * 0.12;
       follower.style.left = x + "px";
       follower.style.top = y + "px";
-      requestAnimationFrame(tick);
+      if (Math.abs(tx - x) + Math.abs(ty - y) > 0.1) {
+        followerFrame = requestAnimationFrame(tick);
+      }
     }
     tile.addEventListener("pointerenter", (e) => {
       active = true;
@@ -962,56 +1232,87 @@ if (matchMedia("(hover:hover) and (pointer:fine)").matches) {
       const r = tile.getBoundingClientRect();
       tx = e.clientX - r.left;
       ty = e.clientY - r.top;
+      if (followerFrame === undefined)
+        followerFrame = requestAnimationFrame(tick);
     });
     tile.addEventListener("pointerleave", () => {
       active = false;
+      cancelAnimationFrame(followerFrame);
+      followerFrame = undefined;
       follower.style.left = "50%";
       follower.style.top = "50%";
     });
   });
 }
-if (
-  path === "/" &&
-  window.gsap &&
-  window.ScrollTrigger &&
-  !matchMedia("(prefers-reduced-motion: reduce)").matches
-) {
-  const comp = document.querySelector("#komposisi");
-  const parallax = {
-    scrollTrigger: {
-      trigger: comp,
-      start: "top -100%",
-      end: "top -112.5%",
-      scrub: true,
-    },
-  };
-  gsap.to(
-    "#komposisi .composition-tile:nth-child(4),#komposisi .composition-tile:nth-child(5)",
-    { y: -110, ease: "none", scrollTrigger: { ...parallax.scrollTrigger } },
+function initImageReveals() {
+  const images = [...document.querySelectorAll("img")].filter(
+    (image) => !image.closest(".preloader,.project-echoes"),
   );
-  gsap.to("#komposisi .lead", {
-    y: -204,
-    ease: "none",
-    scrollTrigger: { ...parallax.scrollTrigger },
+  if (motionPreference.matches) {
+    images.forEach((image) => image.classList.remove("is-blur"));
+    return;
+  }
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(({ target: image, isIntersecting }) => {
+        if (!isIntersecting) return;
+        observer.unobserve(image);
+        image.loading = "eager";
+        image
+          .decode()
+          .catch(() => {})
+          .finally(() => image.classList.remove("is-blur"));
+      });
+    },
+    { threshold: 0.01 },
+  );
+  images.forEach((image) => {
+    image.classList.add("image-reveal");
+    const rect = image.getBoundingClientRect();
+    if (
+      image.complete &&
+      image.naturalWidth > 0 &&
+      rect.top < innerHeight &&
+      rect.bottom > 0 &&
+      rect.left < innerWidth &&
+      rect.right > 0
+    )
+      return;
+    image.classList.add("is-blur");
+    observer.observe(image);
+    image.addEventListener("transitionend", (event) => {
+      if (
+        event.propertyName === "filter" &&
+        !image.classList.contains("is-blur")
+      )
+        image.classList.remove("image-reveal");
+    });
   });
-  gsap.to("#komposisi .body", {
-    y: -309,
-    ease: "none",
-    scrollTrigger: { ...parallax.scrollTrigger },
+  motionPreference.addEventListener("change", () => {
+    if (motionPreference.matches) {
+      observer.disconnect();
+      images.forEach((image) =>
+        image.classList.remove("is-blur", "image-reveal"),
+      );
+    }
   });
 }
-const imageObserver = new IntersectionObserver(
-  (entries) =>
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        e.target.classList.remove("is-blur");
-        imageObserver.unobserve(e.target);
-      }
-    }),
-  { threshold: 0.01 },
-);
-document.querySelectorAll("img:not(.preloader-center)").forEach((el) => {
-  if (el.closest(".preloader")) return;
-  el.classList.add("is-blur");
-  imageObserver.observe(el);
-});
+initImageReveals();
+
+const heroVideo = document.querySelector(".hero video");
+if (heroVideo) {
+  let visible = true;
+  function syncVideoPlayback() {
+    if (visible && !document.hidden && !motionPreference.matches) {
+      heroVideo.play().catch(() => {});
+    } else {
+      heroVideo.pause();
+    }
+  }
+  new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    syncVideoPlayback();
+  }).observe(heroVideo);
+  document.addEventListener("visibilitychange", syncVideoPlayback);
+  motionPreference.addEventListener("change", syncVideoPlayback);
+}
