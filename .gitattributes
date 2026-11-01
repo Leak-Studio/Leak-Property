@@ -1,0 +1,9 @@
+* text=auto
+source/runtime/** -text -whitespace
+source/assets/** -text
+dist/vendor/** -text -whitespace
+dist/assets/** -text
+dist/style.css -text
+# Imported generated markup retains upstream inline-style formatting.
+source/exports/** whitespace=-blank-at-eol,-space-before-tab
+dist/**/*.html whitespace=-blank-at-eol,-space-before-tab

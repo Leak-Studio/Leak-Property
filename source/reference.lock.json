@@ -1,0 +1,90 @@
+{
+  "origin": "https://stanzza.design",
+  "captured": "2026-11-01",
+  "pages": [
+    {
+      "path": "/",
+      "url": "https://stanzza.design/",
+      "sha256": "7def91d4c95fb103525e0d3d3c7bb3350e7fb6839d2cb1f97af95741f49c160f",
+      "pageId": "69e1cc2e4bb2c432ebac4f79"
+    },
+    {
+      "path": "/blog",
+      "url": "https://stanzza.design/blog",
+      "sha256": "69a4402db680c5a9d909c6e0eec2fbb12fe66a94b161535409bd1d88bebc6f87",
+      "pageId": "69fcf425f2337623b9029328"
+    },
+    {
+      "path": "/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+      "url": "https://stanzza.design/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+      "sha256": "78568986d5ac403207d8097ea5aa1897aa97eeefc80da1c2ee9dac07a3dcd4ac",
+      "pageId": "69ee72eb91900fe5ef8a60f0"
+    },
+    {
+      "path": "/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+      "url": "https://stanzza.design/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+      "sha256": "2d08ab8be1007afb61b1acdb5f31eb1812ac46f047227501c35968fb7c842439",
+      "pageId": "69ee72eb91900fe5ef8a60f0"
+    },
+    {
+      "path": "/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+      "url": "https://stanzza.design/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+      "sha256": "973f8bd1531302b5a3e984e4bfde98383bd9c3e2b8d07c419a9c1e5d374804d7",
+      "pageId": "69ee72eb91900fe5ef8a60f0"
+    },
+    {
+      "path": "/documents/cookie-policy",
+      "url": "https://stanzza.design/documents/cookie-policy",
+      "sha256": "cfb31dcee14897183898f12ce802a67775bddc6fab7473ad0b8d181354841195",
+      "pageId": "6a16c9cf08431a21a7c40e2c"
+    },
+    {
+      "path": "/documents/privacy-policy",
+      "url": "https://stanzza.design/documents/privacy-policy",
+      "sha256": "e4c1f2e2253101fb6514defa5b42ab9b8a7508a5ce3d9ef1614dab6bfd687c6a",
+      "pageId": "6a16c39c7d388bd010268600"
+    },
+    {
+      "path": "/documents/terms-of-service",
+      "url": "https://stanzza.design/documents/terms-of-service",
+      "sha256": "68290cf1df8aaf7b808c440e51bccb33d1ba5f0219e885da7b1368bb39dba7f0",
+      "pageId": "69fcfaa8013032741c12d4ef"
+    },
+    {
+      "path": "/projects",
+      "url": "https://stanzza.design/projects",
+      "sha256": "b5d1ccd7e9d14251072e8088193352213f62e410664b6ce425ee55efdcca5ab1",
+      "pageId": "69fcf4362783ba8cb1c9fdfc"
+    },
+    {
+      "path": "/projects/apartement-in-valencinia",
+      "url": "https://stanzza.design/projects/apartement-in-valencinia",
+      "sha256": "0c7cc7ebaa688e4df36da941eb311beda516e9064b378869668429ad4682c04a",
+      "pageId": "69ee73e90a1570d02a7495d0"
+    },
+    {
+      "path": "/projects/chok",
+      "url": "https://stanzza.design/projects/chok",
+      "sha256": "d1b34143c4e15ec06a4af24e05068cf6f55e126a149561b0339041fd7afbb509",
+      "pageId": "69ee73e90a1570d02a7495d0"
+    },
+    {
+      "path": "/projects/dose-coffee-house",
+      "url": "https://stanzza.design/projects/dose-coffee-house",
+      "sha256": "c06c6718d813690502e52f527b6bbcb29c1ea0f4b014976e26aeedbb521d4ca2",
+      "pageId": "69ee73e90a1570d02a7495d0"
+    },
+    {
+      "path": "/projects/jazean-coffee-house",
+      "url": "https://stanzza.design/projects/jazean-coffee-house",
+      "sha256": "bdb6654716ba63d04d20b2863e50a53083587da72a3938cc260e94ee486a8122",
+      "pageId": "69ee73e90a1570d02a7495d0"
+    },
+    {
+      "path": "/projects/pau-claris-apartment-main",
+      "url": "https://stanzza.design/projects/pau-claris-apartment-main",
+      "sha256": "b691f7e477414e24bb6e2286cf32b5c2950326b3e8575720bfd0ce01b8dc5e6a",
+      "pageId": "69ee73e90a1570d02a7495d0"
+    }
+  ]
+}

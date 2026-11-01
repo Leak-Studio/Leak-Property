@@ -2,7 +2,8 @@
   "name": "leak-property",
   "private": true,
   "scripts": {
+    "build": "python scripts/build.py",
     "dev": "node scripts/serve.mjs",
-    "check": "node --check dist/app.js && node --check scripts/serve.mjs && node --check scripts/verify-scroll.js"
+    "check": "python scripts/build.py --check && node --check source/adapter.js && node --check scripts/serve.mjs && node --check scripts/verify-scroll.js && node --check scripts/verify-parity.js"
   }
 }

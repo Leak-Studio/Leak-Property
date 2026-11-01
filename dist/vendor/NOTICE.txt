@@ -1,7 +1,10 @@
-Bundled frontend libraries
+Frontend dependency provenance
 
-GSAP 3.15.0 and ScrollTrigger — GreenSock standard no-charge license: https://gsap.com/standard-license/
-@studio-freight/lenis 1.0.33 — https://github.com/darkroomengineering/lenis
-Swiper 11.2.10 — MIT license (see SWIPER-LICENSE.txt)
+GSAP 3.15.0, SplitText, Flip, and ScrollTrigger — GreenSock standard license: https://gsap.com/standard-license/
+Lenis 1.0.33 — https://github.com/darkroomengineering/lenis
+Swiper 11 — MIT license; see SWIPER-LICENSE.txt.
+jQuery 3.5.1 — MIT license: https://jquery.org/license/
 
-No Webflow or HubSpot source assets are bundled.
+Published Webflow client runtime, generated page initializers, and generated responsive CSS are preserved for the requested frontend approach. Original notices inside the runtime files are retained. Source URLs and hashes are recorded in source/runtime.lock.json.
+
+Reference font and UI resources have their provenance recorded in source/runtime.lock.json. The existing Leak Properti photographs and video remain in use. Original business contacts, HubSpot scheduling, and external form destinations are not published as Leak integrations.

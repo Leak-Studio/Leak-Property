@@ -1,0 +1,305 @@
+{
+  "assets": [
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/css/stanza-dev.webflow.shared.f7ce34a96.min.css",
+      "target": "/style.css",
+      "sourceFile": "runtime/webflow.css",
+      "sha256": "dfd7602bfe38fa16d6ec7990272861ab438452f005f446515c6c8f9c9170201b",
+      "upstreamSha256": "afa278fa881f81a0f2c0c84cda5d65bf2300218db65542c6ac7279883e84841d",
+      "urlReplacements": {
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/6a551ca26bf4b720d62c4e66_InstrumentSerif-Regular.woff2": "/assets/fonts/6a551ca26bf4b720d62c4e66_InstrumentSerif-Regular.woff2",
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69e8c6df1d0466ba9b9dfff3_ofont.ru_Helios-Cond.woff": "/assets/fonts/69e8c6df1d0466ba9b9dfff3_ofont.ru_Helios-Cond.woff",
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69e8c695d59e1682e82b8783_helioscond_bold.woff": "/assets/fonts/69e8c695d59e1682e82b8783_helioscond_bold.woff",
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69ee5af3ecbac4553e64ffe1_katherine_plus.woff": "/assets/fonts/69ee5af3ecbac4553e64ffe1_katherine_plus.woff",
+        "https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg": "/assets/ui/custom-checkbox-checkmark.589d534424.svg",
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/6a7ecdb85d2730d0ebbecd11_d7956f305b36e21a4a1b7d821258e330_cursor.svg": "/assets/ui/6a7ecdb85d2730d0ebbecd11_d7956f305b36e21a4a1b7d821258e330_cursor.svg",
+        "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69ee36edf5e087d032a46572_OG.avif": "/assets/residence-bath.webp"
+      }
+    },
+    {
+      "url": "https://unpkg.com/@studio-freight/lenis@1.0.33/dist/lenis.min.js",
+      "target": "/vendor/lenis.min.js",
+      "sourceFile": "runtime/lenis.min.js",
+      "sha256": "228a4541f3c25622518832f47f7be3e800027b046b4ac2bd05118ce9d91493f6"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
+      "target": "/vendor/swiper-bundle.min.css",
+      "sourceFile": "runtime/swiper-bundle.min.css",
+      "sha256": "74ca6aae5468dbc924790c3b4d219a089b90a34bad53a0f7ca3a73e73b6f5ab8"
+    },
+    {
+      "url": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=69e1cc2c4bb2c432ebac4f2b",
+      "target": "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "sourceFile": "runtime/jquery-3.5.1.min.dc5e7f18c8.js",
+      "sha256": "f7f6a5894f1d19ddad6fa392b2ece2c5e578cbf7da4ea805b6885eb6985b6e3d"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.schunk.36b8fb49256177c8.js",
+      "target": "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "sourceFile": "runtime/webflow.schunk.36b8fb49256177c8.js",
+      "sha256": "8b7d0de9f3df9103d70ed000c17b348240623ac4e4053d56fa0d5cfd8d74d79d"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.schunk.e1e468d4b5dfafa4.js",
+      "target": "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "sourceFile": "runtime/webflow.schunk.e1e468d4b5dfafa4.js",
+      "sha256": "a5300b8dde0ca8e5150d386a44b4225aa185a193dc0cd6c095844925044ae0bd"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.8edbfe09.106f5899ca3e378f.js",
+      "target": "/vendor/webflow.8edbfe09.106f5899ca3e378f.js",
+      "sourceFile": "runtime/webflow.8edbfe09.106f5899ca3e378f.js",
+      "sha256": "5adc25dd480a84e4b5b0d1d74d3091370a5f68a596f22e5a88a7df04b995058c"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js",
+      "target": "/vendor/gsap.min.js",
+      "sourceFile": "runtime/gsap.min.js",
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/gsap/3.15.0/SplitText.min.js",
+      "target": "/vendor/SplitText.min.js",
+      "sourceFile": "runtime/SplitText.min.js",
+      "sha256": "419f7027a5f086a12cb7988736d8fdd3a6ed2200229661de25b6628ca7ced344"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/gsap/3.15.0/Flip.min.js",
+      "target": "/vendor/Flip.min.js",
+      "sourceFile": "runtime/Flip.min.js",
+      "sha256": "cbe3ca726350f8d230da38a14ce2384e7772e05a45cee6144dd7fe6dde868c2f"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/gsap/3.15.0/ScrollTrigger.min.js",
+      "target": "/vendor/ScrollTrigger.min.js",
+      "sourceFile": "runtime/ScrollTrigger.min.js",
+      "sha256": "b0b14d67b55b0c43c756ac0b106cfcb09d0879945f6ead64451065b0672916a2"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js",
+      "target": "/vendor/swiper-bundle.min.js",
+      "sourceFile": "runtime/swiper-bundle.min.js",
+      "sha256": "985f1224c0eeec99d367a9db35e58e44b21e7eb9ce45831b15b4c108e41fd97f"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "target": "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "sourceFile": "runtime/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "sha256": "07b8c112569bb8c0b96f8829235b133c1962740c509cc768a58ec833005b1e39"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.3e31eae1.b62225f309bc5e33.js",
+      "target": "/vendor/webflow.3e31eae1.b62225f309bc5e33.js",
+      "sourceFile": "runtime/webflow.3e31eae1.b62225f309bc5e33.js",
+      "sha256": "dcd901bb7ef7158c37c907d27e7f676a8239bdaca133f9b95ccf899c43fabe86"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/js/webflow.c43bc896.f8e93c3993f9320c.js",
+      "target": "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "sourceFile": "runtime/webflow.c43bc896.f8e93c3993f9320c.js",
+      "sha256": "5f386fd9081cdce17a88d44c98f8562fa031472cca89322aad103ad19311415f"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/6a551ca26bf4b720d62c4e66_InstrumentSerif-Regular.woff2",
+      "target": "/assets/fonts/6a551ca26bf4b720d62c4e66_InstrumentSerif-Regular.woff2",
+      "sourceFile": "assets/fonts/6a551ca26bf4b720d62c4e66_InstrumentSerif-Regular.woff2",
+      "sha256": "e0f99b39b63f5e81cae60d3913576aa1aa5dc0ad813dfadd39ff357f66fef440"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69e8c6df1d0466ba9b9dfff3_ofont.ru_Helios-Cond.woff",
+      "target": "/assets/fonts/69e8c6df1d0466ba9b9dfff3_ofont.ru_Helios-Cond.woff",
+      "sourceFile": "assets/fonts/69e8c6df1d0466ba9b9dfff3_ofont.ru_Helios-Cond.woff",
+      "sha256": "cc028785cc3e6876c7e00341ec169a5bf2df1e418c13249bad2eedccddcea4d5"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69e8c695d59e1682e82b8783_helioscond_bold.woff",
+      "target": "/assets/fonts/69e8c695d59e1682e82b8783_helioscond_bold.woff",
+      "sourceFile": "assets/fonts/69e8c695d59e1682e82b8783_helioscond_bold.woff",
+      "sha256": "0894ad08807e484e1aa08055cb7c9d39743d079e4983f83e2c789f5344e1e92e"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/69ee5af3ecbac4553e64ffe1_katherine_plus.woff",
+      "target": "/assets/fonts/69ee5af3ecbac4553e64ffe1_katherine_plus.woff",
+      "sourceFile": "assets/fonts/69ee5af3ecbac4553e64ffe1_katherine_plus.woff",
+      "sha256": "be85cd3ab754307103bfacc031bf739100cf237b89d906d072795080870d31dd"
+    },
+    {
+      "url": "https://d3e54v103j8qbb.cloudfront.net/static/custom-checkbox-checkmark.589d534424.svg",
+      "target": "/assets/ui/custom-checkbox-checkmark.589d534424.svg",
+      "sourceFile": "assets/ui/custom-checkbox-checkmark.589d534424.svg",
+      "sha256": "121f8dc257d116b52e8d91b2c735fd52e7516c268b6c721c60ac45d22d5e6404"
+    },
+    {
+      "url": "https://cdn.prod.website-files.com/69e1cc2c4bb2c432ebac4f2b/6a7ecdb85d2730d0ebbecd11_d7956f305b36e21a4a1b7d821258e330_cursor.svg",
+      "target": "/assets/ui/6a7ecdb85d2730d0ebbecd11_d7956f305b36e21a4a1b7d821258e330_cursor.svg",
+      "sourceFile": "assets/ui/6a7ecdb85d2730d0ebbecd11_d7956f305b36e21a4a1b7d821258e330_cursor.svg",
+      "sha256": "0c602a4b5538835bedb431faf84cac0d0da8a5996673e3084e924deed02eda64"
+    }
+  ],
+  "exceptions": [
+    {
+      "page": "/",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/",
+      "role": "duplicate-or-unbound-helper"
+    },
+    {
+      "page": "/",
+      "role": "duplicate-or-unbound-helper"
+    },
+    {
+      "page": "/blog",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/blog",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+      "role": "integration",
+      "source": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+    },
+    {
+      "page": "/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+      "role": "integration",
+      "source": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+    },
+    {
+      "page": "/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+      "role": "integration",
+      "source": "https://cdn.jsdelivr.net/npm/@finsweet/attributes@2/attributes.js"
+    },
+    {
+      "page": "/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/documents/cookie-policy",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/documents/cookie-policy",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/documents/privacy-policy",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/documents/privacy-policy",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/documents/terms-of-service",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/documents/terms-of-service",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects/apartement-in-valencinia",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects/apartement-in-valencinia",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects/chok",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects/chok",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects/dose-coffee-house",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects/dose-coffee-house",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects/jazean-coffee-house",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects/jazean-coffee-house",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    },
+    {
+      "page": "/projects/pau-claris-apartment-main",
+      "role": "integration",
+      "source": "https://static.hsappstatic.net/MeetingsEmbed/ex/MeetingsEmbedCode.js"
+    },
+    {
+      "page": "/projects/pau-claris-apartment-main",
+      "role": "scroll-owner",
+      "sha256": "2d8ec89c2cad46e8999abfae82a57d06515813b6a5c39248eaa403bf733f47ed"
+    }
+  ]
+}

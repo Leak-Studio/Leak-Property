@@ -1,0 +1,184 @@
+{
+  "date": "2026-11-01",
+  "scope": "layout, typography, motion and intrinsic UI; Leak photographs/video and Indonesian branding/copy retained",
+  "weights": {
+    "geometryTypography": 40,
+    "motion": 40,
+    "interactions": 20
+  },
+  "viewports": [
+    "1280x800",
+    "790x850",
+    "429x928"
+  ],
+  "pages": [
+    {
+      "route": "/",
+      "kind": "landing",
+      "scores": {
+        "1280,800": 99.67,
+        "790,850": 94.78,
+        "429,928": 93.55
+      },
+      "minimum": 93.55,
+      "maximumPageHeightDifferencePercent": 0.61,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/blog/",
+      "kind": "blog",
+      "scores": {
+        "1280,800": 100.0,
+        "790,850": 96.25,
+        "429,928": 99.22
+      },
+      "minimum": 96.25,
+      "maximumPageHeightDifferencePercent": 1.21,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/blog/cahaya-sebagai-material/",
+      "kind": "article",
+      "scores": {
+        "1280,800": 100.0,
+        "790,850": 92.5,
+        "429,928": 92.0
+      },
+      "minimum": 92.0,
+      "maximumPageHeightDifferencePercent": 1.12,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/blog/rumah-yang-terasa-utuh/",
+      "kind": "article",
+      "scores": {
+        "1280,800": 95.78,
+        "790,850": 95.31,
+        "429,928": 92.0
+      },
+      "minimum": 92.0,
+      "maximumPageHeightDifferencePercent": 2.58,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/blog/merancang-ruang-yang-bernapas/",
+      "kind": "article",
+      "scores": {
+        "1280,800": 95.78,
+        "790,850": 92.97,
+        "429,928": 99.5
+      },
+      "minimum": 92.97,
+      "maximumPageHeightDifferencePercent": 1.36,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/documents/cookie-policy/",
+      "kind": "legal",
+      "scores": {
+        "1280,800": 94.11,
+        "790,850": 98.39,
+        "429,928": 93.18
+      },
+      "minimum": 93.18,
+      "maximumPageHeightDifferencePercent": 1.15,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/documents/privacy-policy/",
+      "kind": "legal",
+      "scores": {
+        "1280,800": 93.85,
+        "790,850": 94.11,
+        "429,928": 93.65
+      },
+      "minimum": 93.65,
+      "maximumPageHeightDifferencePercent": 0.92,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/documents/terms-of-service/",
+      "kind": "legal",
+      "scores": {
+        "1280,800": 94.11,
+        "790,850": 94.11,
+        "429,928": 98.27
+      },
+      "minimum": 94.11,
+      "maximumPageHeightDifferencePercent": 0.75,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/",
+      "kind": "projects",
+      "scores": {
+        "1280,800": 98.56,
+        "790,850": 98.27,
+        "429,928": 96.84
+      },
+      "minimum": 96.84,
+      "maximumPageHeightDifferencePercent": 0.11,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/rumah-antara/",
+      "kind": "project",
+      "scores": {
+        "1280,800": 96.07,
+        "790,850": 95.36,
+        "429,928": 90.62
+      },
+      "minimum": 90.62,
+      "maximumPageHeightDifferencePercent": 2.9,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/teras-cahaya/",
+      "kind": "project",
+      "scores": {
+        "1280,800": 95.66,
+        "790,850": 92.89,
+        "429,928": 92.08
+      },
+      "minimum": 92.08,
+      "maximumPageHeightDifferencePercent": 3.77,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/ruang-teduh/",
+      "kind": "project",
+      "scores": {
+        "1280,800": 92.89,
+        "790,850": 92.89,
+        "429,928": 92.92
+      },
+      "minimum": 92.89,
+      "maximumPageHeightDifferencePercent": 3.5,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/rumah-sela/",
+      "kind": "project",
+      "scores": {
+        "1280,800": 93.29,
+        "790,850": 96.05,
+        "429,928": 92.08
+      },
+      "minimum": 92.08,
+      "maximumPageHeightDifferencePercent": 3.29,
+      "allMediaLoaded": true
+    },
+    {
+      "route": "/projects/ruang-senja/",
+      "kind": "project",
+      "scores": {
+        "1280,800": 97.14,
+        "790,850": 95.71,
+        "429,928": 91.75
+      },
+      "minimum": 91.75,
+      "maximumPageHeightDifferencePercent": 0.74,
+      "allMediaLoaded": true
+    }
+  ]
+}

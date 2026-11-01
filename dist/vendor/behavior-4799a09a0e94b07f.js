@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{let e=document.querySelector('[data-button-swap="swap-trigger"]');if(!e)return;let t=e.querySelector('[data-text="show-swap"]');if(!t)return;let r=!1;e.addEventListener("click",()=>{r=!r,t.innerText=r?"Tampilkan lebih sedikit":"Lihat pertanyaan lain"})});

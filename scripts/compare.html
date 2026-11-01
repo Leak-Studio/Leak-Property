@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="id">
+  <meta charset="utf-8" /><title>Leak Properti · Perbandingan frontend</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #202220;
+      color: #eee;
+      font:
+        14px/1.4 system-ui,
+        sans-serif;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 3;
+      padding: 12px 18px;
+      background: #202220;
+      border-bottom: 1px solid #565b52;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    button,
+    select {
+      font: inherit;
+      padding: 6px 10px;
+    }
+    button {
+      cursor: pointer;
+    }
+    #status {
+      margin-left: auto;
+    }
+    .pair {
+      display: flex;
+      gap: 20px;
+      align-items: start;
+      padding: 16px;
+      width: max-content;
+    }
+    h2 {
+      font-size: 14px;
+      margin: 0 0 8px;
+      font-weight: 500;
+    }
+    .frame-window {
+      position: relative;
+      overflow: hidden;
+    }
+    iframe {
+      display: block;
+      border: 0;
+      background: #f4f3eb;
+      position: absolute;
+      left: 0;
+      top: 0;
+      transform-origin: top left;
+    }
+    pre {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      background: #fff;
+      color: #222;
+      max-width: 350px;
+      max-height: 160px;
+      overflow: auto;
+      padding: 10px;
+      font-size: 11px;
+      white-space: pre-wrap;
+    }
+  </style>
+  <header>
+    <strong>Perbandingan frontend</strong
+    ><select id="page" aria-label="Halaman"></select
+    ><select id="viewport" aria-label="Viewport">
+      <option value="1280,800">Desktop 1280 × 800</option>
+      <option value="790,850">Tablet 790 × 850</option>
+      <option value="429,928">Mobile 429 × 928</option></select
+    ><button id="load">Muat pasangan</button
+    ><button id="batch">Ukur semua halaman</button
+    ><select id="state" aria-label="State">
+      <option value="top">Awal halaman</option>
+      <option value="composition:.5">Komposisi 50%</option>
+      <option value="apartment:.5">Zoom proyek 50%</option>
+      <option value="story:.25">Layanan 25%</option>
+      <option value="story:.5">Layanan 50%</option>
+      <option value="story:.9">Layanan 90%</option>
+      <option value="about:.5">Tentang 50%</option>
+      <option value="faq:0">FAQ</option>
+      <option value="menu">Menu</option>
+      <option value="modal">Modal</option>
+      <option value="close">Tutup panel</option></select
+    ><button id="observe">Amati state</button
+    ><span id="status">Memuat daftar</span>
+  </header>
+  <main class="pair">
+    <section>
+      <h2>Snapshot referensi · aset asli</h2>
+      <div class="frame-window">
+        <iframe id="reference" title="Snapshot referensi"></iframe>
+      </div>
+    </section>
+    <section>
+      <h2>Leak Properti · aset pilihan pengguna</h2>
+      <div class="frame-window">
+        <iframe id="local" title="Leak Properti"></iframe>
+      </div>
+    </section>
+  </main>
+  <pre id="summary">Belum ada pengamatan.</pre>
+  <script>
+    const page = document.querySelector("#page"),
+      viewport = document.querySelector("#viewport"),
+      status = document.querySelector("#status"),
+      reference = document.querySelector("#reference"),
+      local = document.querySelector("#local"),
+      summary = document.querySelector("#summary");
+    let manifest,
+      observations = {},
+      batchResolve = null;
+    fetch("/__parity-manifest.json")
+      .then((r) => r.json())
+      .then((data) => {
+        manifest = data;
+        data.routes.forEach((route, i) => {
+          const option = document.createElement("option");
+          option.value = i;
+          option.textContent = route.target;
+          page.append(option);
+        });
+        loadPair();
+      });
+    function loadPair() {
+      const route = manifest.routes[Number(page.value)],
+        [width, height] = viewport.value.split(",").map(Number);
+      observations = {};
+      document.body.dataset.ready = "loading";
+      delete document.body.dataset.observations;
+      status.textContent = "Menunggu dua halaman";
+      const scale = Math.min(
+        (innerWidth - 60) / 2 / width,
+        (innerHeight - 100) / height,
+        1,
+      );
+      for (const frame of [reference, local]) {
+        frame.width = width;
+        frame.height = height;
+        frame.style.transform = `scale(${scale})`;
+        frame.parentElement.style.width = width * scale + "px";
+        frame.parentElement.style.height = height * scale + "px";
+      }
+      reference.src = "http://127.0.0.1:4175" + route.source + "?parity";
+      local.src = route.target + "?parity";
+    }
+    document.querySelector("#load").onclick = loadPair;
+    window.addEventListener("message", (event) => {
+      if (
+        !["http://127.0.0.1:4173", "http://127.0.0.1:4175"].includes(
+          event.origin,
+        )
+      )
+        return;
+      const side =
+        event.source === reference.contentWindow
+          ? "reference"
+          : event.source === local.contentWindow
+            ? "local"
+            : null;
+      if (!side) return;
+      if (event.data?.type === "leak:probe-error") {
+        status.textContent = event.data.message;
+        return;
+      }
+      if (event.data?.type !== "leak:observation") return;
+      const expected = manifest.routes[Number(page.value)];
+      if (
+        event.data.snapshot.path !==
+          (side === "reference" ? expected.source : expected.target) ||
+        event.data.snapshot.viewport.width !==
+          Number(viewport.value.split(",")[0])
+      )
+        return;
+      observations[side] = event.data.snapshot;
+      if (observations.reference && observations.local) {
+        document.body.dataset.observations = JSON.stringify(observations);
+        document.body.dataset.ready = "ready";
+        status.textContent = "Dua halaman siap";
+        if (batchResolve) {
+          const resolve = batchResolve;
+          batchResolve = null;
+          resolve(JSON.parse(JSON.stringify(observations)));
+        }
+        summary.textContent = JSON.stringify(
+          {
+            reference: {
+              height: observations.reference.totalHeight,
+              state: observations.reference.state,
+            },
+            local: {
+              height: observations.local.totalHeight,
+              state: observations.local.state,
+            },
+          },
+          null,
+          2,
+        );
+      }
+    });
+    document.querySelector("#observe").onclick = () => {
+      const value = document.querySelector("#state").value;
+      const message = value.includes(":")
+        ? {
+            action: "scroll",
+            id: value.split(":")[0],
+            progress: Number(value.split(":")[1]),
+          }
+        : { action: value };
+      observations = {};
+      document.body.dataset.ready = "loading";
+      for (const frame of [reference, local])
+        frame.contentWindow.postMessage(
+          { type: "leak:state", ...message },
+          "*",
+        );
+    };
+
+    async function awaitPair(start) {
+      return new Promise((resolve, reject) => {
+        const timer = setTimeout(() => {
+          batchResolve = null;
+          reject(Error("Observation deadline"));
+        }, 30000);
+        batchResolve = (value) => {
+          clearTimeout(timer);
+          resolve(value);
+        };
+        start();
+      });
+    }
+    async function command(action) {
+      return awaitPair(() => {
+        observations = {};
+        for (const frame of [reference, local])
+          frame.contentWindow.postMessage(
+            {
+              type: "leak:state",
+              ...(typeof action === "string" ? { action } : action),
+            },
+            "*",
+          );
+      });
+    }
+    document.querySelector("#batch").onclick = async () => {
+      const results = [];
+      const button = document.querySelector("#batch");
+      button.disabled = true;
+      document.body.dataset.batchState = "running";
+      delete document.body.dataset.batch;
+      try {
+        for (const size of ["1280,800", "790,850", "429,928"]) {
+          viewport.value = size;
+          for (let index = 0; index < manifest.routes.length; index++) {
+            page.value = index;
+            const top = await awaitPair(loadPair);
+            const states = [];
+            const actions = [
+              "menu",
+              "close",
+              "modal",
+              "close",
+              "body",
+              "footer",
+            ];
+            if (manifest.routes[index].kind === "landing")
+              actions.push(
+                { action: "scroll", id: "composition", progress: 0.5 },
+                { action: "scroll", id: "apartment", progress: 0.5 },
+                { action: "scroll", id: "story", progress: 0.25 },
+                { action: "scroll", id: "story", progress: 0.5 },
+                { action: "scroll", id: "story", progress: 0.9 },
+                { action: "scroll", id: "about", progress: 0.5 },
+                { action: "scroll", id: "faq", progress: 0 },
+                "faq",
+                "close",
+              );
+            for (const action of actions) {
+              const pair = await command(action);
+              states.push({
+                action:
+                  typeof action === "string"
+                    ? action
+                    : action.id + ":" + action.progress,
+                reference: {
+                  snapshotState: pair.reference.state,
+                  motion: pair.reference.motion,
+                  components: pair.reference.components,
+                  textMotion: pair.reference.textMotion,
+                  scroll: pair.reference.scroll,
+                },
+                local: {
+                  snapshotState: pair.local.state,
+                  motion: pair.local.motion,
+                  components: pair.local.components,
+                  textMotion: pair.local.textMotion,
+                  scroll: pair.local.scroll,
+                },
+              });
+            }
+            results.push({
+              route: manifest.routes[index].target,
+              viewport: size,
+              top,
+              states,
+            });
+            document.body.dataset.batch = JSON.stringify(results);
+            document.body.dataset.progress = results.length + "/42";
+            status.textContent = "Pasangan " + results.length + "/42 selesai";
+          }
+        }
+        document.body.dataset.batchState = "done";
+        status.textContent = "42 pasangan selesai";
+      } catch (error) {
+        document.body.dataset.batchState = "error";
+        document.body.dataset.batchError = error.message;
+        status.textContent = error.message;
+      } finally {
+        button.disabled = false;
+      }
+    };
+  </script>
+</html>

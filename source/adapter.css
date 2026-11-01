@@ -1,0 +1,79 @@
+html.lenis,
+html.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+[data-leak-unavailable] {
+  cursor: default;
+}
+.leak-script-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Katherine Plus", cursive;
+  white-space: nowrap;
+  font-size: 1.9rem;
+  color: currentColor;
+  overflow: hidden;
+}
+.footer_bottom-video.leak-script-art {
+  font-family: "Instrument Serif", Georgia, serif;
+  font-size: 12.8vw;
+  letter-spacing: -0.055em;
+  line-height: 1;
+}
+.logo-link .u-logo {
+  color: inherit;
+}
+.header:not(.header--dark) .logo-link,
+.preloader .logo-link,
+.footer .logo-link {
+  color: #f4f3eb;
+}
+.header.header--dark .logo-link {
+  color: #1e1e1e;
+}
+@media (max-width: 767px) {
+  .header:has(.nav_content.w--open) .logo-link {
+    color: #1e1e1e;
+  }
+}
+.leak-meeting-demo {
+  min-height: 32rem;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+  background: #f4f3eb;
+  color: #1e1e1e;
+}
+.leak-meeting-content h2 {
+  margin: 0 0 2rem;
+  font:
+    3.5rem/1 "Instrument Serif",
+    Georgia,
+    serif;
+}
+.leak-meeting-content p {
+  max-width: 26rem;
+  font:
+    1.25rem/1.4 "Helioscond",
+    sans-serif;
+}
+.leak-reduced-motion .preloader {
+  display: none !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .preloader,
+  .preloader_back {
+    display: none !important;
+  }
+}

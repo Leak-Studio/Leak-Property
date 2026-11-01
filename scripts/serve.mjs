@@ -12,14 +12,26 @@ const types = {
   ".webp": "image/webp",
   ".jpg": "image/jpeg",
   ".mp4": "video/mp4",
+  ".woff": "font/woff",
+  ".woff2": "font/woff2",
 };
 
 createServer(async (request, response) => {
   try {
     const url = new URL(request.url, `http://127.0.0.1:${port}`);
-    const probe = url.pathname === "/__verify-scroll.js";
+    if (url.pathname === "/__parity-manifest.json") {
+      response.writeHead(200, { "Content-Type": "application/json" });
+      response.end(await readFile(resolve("source/site.json")));
+      return;
+    }
+    const special = {
+      "/__verify-scroll.js": "scripts/verify-scroll.js",
+      "/__parity-probe.js": "scripts/verify-parity.js",
+      "/compare": "scripts/compare.html",
+    };
+    const probe = Object.hasOwn(special, url.pathname);
     let file = probe
-      ? resolve("scripts/verify-scroll.js")
+      ? resolve(special[url.pathname])
       : resolve(root, "." + decodeURIComponent(url.pathname));
     if (!probe && file !== root && !file.startsWith(root + sep)) {
       response.writeHead(403).end();
@@ -27,13 +39,17 @@ createServer(async (request, response) => {
     }
     if ((await stat(file)).isDirectory()) file = resolve(file, "index.html");
     let body = await readFile(file);
-    if (extname(file) === ".html" && url.searchParams.has("native")) {
+    if (extname(file) === ".html" && url.searchParams.has("parity")) {
       body = Buffer.from(
         body
           .toString()
           .replace(
-            /<script src="\/vendor\/(?:gsap|ScrollTrigger|SplitText|lenis)\.min\.js" defer><\/script>/g,
-            "",
+            /<head[^>]*>/,
+            '$&<script>sessionStorage.setItem("preloaderShown","true");localStorage.setItem("cookie-banner-closed","1");</script>',
+          )
+          .replace(
+            "</body>",
+            '<script src="/__parity-probe.js" defer></script></body>',
           ),
       );
     }

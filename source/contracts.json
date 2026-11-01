@@ -1,0 +1,884 @@
+[
+  {
+    "source": "/",
+    "pageId": "69e1cc2e4bb2c432ebac4f79",
+    "identities": {
+      "data-wf-component-id": [
+        "12da9841-249e-97ce-ecc8-2662b5036a25",
+        "2d32df46-7f96-4e63-4a6e-eb68515e035d",
+        "2d32df46-7f96-4e63-4a6e-eb68515e035d",
+        "2d32df46-7f96-4e63-4a6e-eb68515e035d",
+        "2d32df46-7f96-4e63-4a6e-eb68515e035d",
+        "2d32df46-7f96-4e63-4a6e-eb68515e035d",
+        "5a5c5c05-71e9-3a1a-ed22-4aef793a7acd",
+        "5a5c5c05-71e9-3a1a-ed22-4aef793a7acd",
+        "5a5c5c05-71e9-3a1a-ed22-4aef793a7acd",
+        "5a5c5c05-71e9-3a1a-ed22-4aef793a7acd",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [
+        "[[[\"12da9841-249e-97ce-ecc8-2662b5036a25\",\"2e41c0d4-f526-132a-76b1-4d374f6eb4a3\"],[\"12da9841-249e-97ce-ecc8-2662b5036a24\"]]]",
+        "[[[\"12da9841-249e-97ce-ecc8-2662b5036a25\",\"2e41c0d4-f526-132a-76b1-4d374f6eb4a4\"],[\"12da9841-249e-97ce-ecc8-2662b5036a24\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"0ccd53c8-4b78-4f03-1c55-33e4140b3b44\"],[\"c292522f-1b92-26d9-298b-47c219eaaa1b\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"0ccd53c8-4b78-4f03-1c55-33e4140b3b44\"],[\"c292522f-1b92-26d9-298b-47c219eaaa1d\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"0ccd53c8-4b78-4f03-1c55-33e4140b3b44\"],[\"c292522f-1b92-26d9-298b-47c219eaaa21\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"0ccd53c8-4b78-4f03-1c55-33e4140b3b44\"],[\"c292522f-1b92-26d9-298b-47c219eaaa25\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\"],[\"c292522f-1b92-26d9-298b-47c219eaaa1b\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\"],[\"c292522f-1b92-26d9-298b-47c219eaaa1d\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\"],[\"c292522f-1b92-26d9-298b-47c219eaaa21\"]]]",
+        "[[[\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\",\"5a5c5c05-71e9-3a1a-ed22-4aef793a7acd\"],[\"c292522f-1b92-26d9-298b-47c219eaaa25\"]]]",
+        "[[[\"69e1cc2e4bb2c432ebac4f79\",\"caf1864f-8c60-59a2-fcac-fdb0bbbb73f0\"],[]]]",
+        "[[[\"69e1cc2e4bb2c432ebac4f79\",\"fcb05787-2baf-75c7-e47c-682b42e2eb1b\"],[]]]"
+      ],
+      "data-w-id": [
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "2ba42e11-d83f-56fd-479a-50b46ef658fe",
+        "b56152e0-4677-3fc1-bada-d857ad7e53a7",
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "3601710e0d201d9be19b503daa20d86f3e5d019e452ba104a58851c34f0d0c10",
+    "templateTrees": [],
+    "sections": [
+      "hero",
+      "composition",
+      "apartment",
+      "composed",
+      "story",
+      "about",
+      "trusted-by",
+      "blog",
+      "founder",
+      "faq"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-b99a5d22e82cebb6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/behavior-d2572d4b60d30105.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.8edbfe09.106f5899ca3e378f.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-ac84d6eb1305f127.js",
+      "/vendor/behavior-4799a09a0e94b07f.js"
+    ],
+    "dataTextCount": 160
+  },
+  {
+    "source": "/blog",
+    "pageId": "69fcf425f2337623b9029328",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "5402a765acaac96ac72aa1764ca0c15db7df835fc64505a410029b5fb4eaef2a",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 14
+  },
+  {
+    "source": "/blog/barcelona-pavilion-the-building-that-made-minimalism-luxurious",
+    "pageId": "69ee72eb91900fe5ef8a60f0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "f1cd628d4bf6843874ca8aaf67c94a6828bb70cd6cd166b3f2f33812f4003fa8",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.3e31eae1.b62225f309bc5e33.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 16
+  },
+  {
+    "source": "/blog/cotton-house-a-quiet-barcelona-place-you-only-share-with-your-own",
+    "pageId": "69ee72eb91900fe5ef8a60f0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "f1cd628d4bf6843874ca8aaf67c94a6828bb70cd6cd166b3f2f33812f4003fa8",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.3e31eae1.b62225f309bc5e33.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 16
+  },
+  {
+    "source": "/blog/latelier-barcelona-a-pastry-shop-where-dessert-is-the-main-character-and-the-interior-is-his-stage",
+    "pageId": "69ee72eb91900fe5ef8a60f0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "f1cd628d4bf6843874ca8aaf67c94a6828bb70cd6cd166b3f2f33812f4003fa8",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.3e31eae1.b62225f309bc5e33.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 16
+  },
+  {
+    "source": "/documents/cookie-policy",
+    "pageId": "6a16c9cf08431a21a7c40e2c",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "4d6ddc7a0fe7bfc91ac13e72b3081ac1375929d97cecf17cacdbab8898da5633",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 11
+  },
+  {
+    "source": "/documents/privacy-policy",
+    "pageId": "6a16c39c7d388bd010268600",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "4d6ddc7a0fe7bfc91ac13e72b3081ac1375929d97cecf17cacdbab8898da5633",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 11
+  },
+  {
+    "source": "/documents/terms-of-service",
+    "pageId": "69fcfaa8013032741c12d4ef",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "4d6ddc7a0fe7bfc91ac13e72b3081ac1375929d97cecf17cacdbab8898da5633",
+    "templateTrees": [],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js"
+    ],
+    "dataTextCount": 11
+  },
+  {
+    "source": "/projects",
+    "pageId": "69fcf4362783ba8cb1c9fdfc",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "4d6ddc7a0fe7bfc91ac13e72b3081ac1375929d97cecf17cacdbab8898da5633",
+    "templateTrees": [
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    ],
+    "sections": [
+      "hero"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c5f0c373.c6f3f18b483e4063.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-75bfa118233bdabb.js"
+    ],
+    "dataTextCount": 76
+  },
+  {
+    "source": "/projects/apartement-in-valencinia",
+    "pageId": "69ee73e90a1570d02a7495d0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "93b8ed5725e1302b72ce5a1e88d76a3e5df7a4d156117664ece4800baeeffc02",
+    "templateTrees": [
+      "388bda898a1242ae27ce42f9499cc6d7b1c496180f9a70156a5b2ebcefc94ce1",
+      "20ccf72bf0c0a7c87ffcf4590035dacfe2931f9f31010bf8977193c9bc3f3b44",
+      "af30ea6da39d3dc141027ccb62605bf94f88f6aa57df993d40506b3886a435d1"
+    ],
+    "sections": [
+      "hero-vertical",
+      "second-vert",
+      "plan",
+      "client",
+      "kirchen",
+      "sticky-scroll",
+      "gallery-vertical",
+      "other"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-473ee45b38fd4d62.js"
+    ],
+    "dataTextCount": 28
+  },
+  {
+    "source": "/projects/chok",
+    "pageId": "69ee73e90a1570d02a7495d0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "102ef3e35a42917762df959a8ccecd427845f5174778e142ab62ae1e7dad0f65",
+    "templateTrees": [
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9",
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9"
+    ],
+    "sections": [
+      "hero-horizont",
+      "second-horizont",
+      "plan",
+      "client",
+      "kirchen",
+      "slider-second",
+      "other"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-473ee45b38fd4d62.js"
+    ],
+    "dataTextCount": 27
+  },
+  {
+    "source": "/projects/dose-coffee-house",
+    "pageId": "69ee73e90a1570d02a7495d0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "102ef3e35a42917762df959a8ccecd427845f5174778e142ab62ae1e7dad0f65",
+    "templateTrees": [
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9",
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9"
+    ],
+    "sections": [
+      "hero-horizont",
+      "second-horizont",
+      "plan",
+      "client",
+      "kirchen",
+      "slider-second",
+      "other"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-473ee45b38fd4d62.js"
+    ],
+    "dataTextCount": 27
+  },
+  {
+    "source": "/projects/jazean-coffee-house",
+    "pageId": "69ee73e90a1570d02a7495d0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "102ef3e35a42917762df959a8ccecd427845f5174778e142ab62ae1e7dad0f65",
+    "templateTrees": [
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9",
+      "643b10de92236bd5483b678726bd45817c8cf3d4666d239822799347a3547684",
+      "1e0554141d531fee65e283a3d81070b3508e42c4dca6ce175aa7d437694c82a9"
+    ],
+    "sections": [
+      "hero-horizont",
+      "second-horizont",
+      "plan",
+      "client",
+      "kirchen",
+      "slider-second",
+      "other"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-473ee45b38fd4d62.js"
+    ],
+    "dataTextCount": 27
+  },
+  {
+    "source": "/projects/pau-claris-apartment-main",
+    "pageId": "69ee73e90a1570d02a7495d0",
+    "identities": {
+      "data-wf-component-id": [
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6",
+        "c1083bf7-8d65-e4a6-4ba5-54ff86a6d9e6"
+      ],
+      "data-wf-target": [],
+      "data-w-id": [
+        "c9f0df5c-c063-f893-15ae-3dd516cef19a"
+      ]
+    },
+    "identityTree": "0f89f3cbf1d0dc8ec520f45cb223ad95c42e5004cdee572b47421cd5163feb2f",
+    "templateTrees": [
+      "388bda898a1242ae27ce42f9499cc6d7b1c496180f9a70156a5b2ebcefc94ce1",
+      "20ccf72bf0c0a7c87ffcf4590035dacfe2931f9f31010bf8977193c9bc3f3b44",
+      "af30ea6da39d3dc141027ccb62605bf94f88f6aa57df993d40506b3886a435d1"
+    ],
+    "sections": [
+      "hero-vertical",
+      "second-horizont",
+      "plan",
+      "client",
+      "kirchen",
+      "sticky-scroll",
+      "gallery-vertical",
+      "other"
+    ],
+    "scripts": [
+      "/adapter.js",
+      "/vendor/behavior-9a37601d1f5a5f2f.js",
+      "/vendor/lenis.min.js",
+      "/vendor/behavior-052973eab2b1f041.js",
+      "/vendor/behavior-60bdce29a777bff6.js",
+      "/vendor/behavior-05ae8ddace3ac186.js",
+      "/vendor/behavior-bf1954537842c217.js",
+      "/vendor/behavior-36ce5b6d4c508fa2.js",
+      "/vendor/behavior-b60b989d403c767a.js",
+      "/vendor/behavior-88b4167152d0e4e7.js",
+      "/vendor/jquery-3.5.1.min.dc5e7f18c8.js",
+      "/vendor/webflow.schunk.36b8fb49256177c8.js",
+      "/vendor/webflow.schunk.e1e468d4b5dfafa4.js",
+      "/vendor/webflow.c43bc896.f8e93c3993f9320c.js",
+      "/vendor/gsap.min.js",
+      "/vendor/SplitText.min.js",
+      "/vendor/Flip.min.js",
+      "/vendor/ScrollTrigger.min.js",
+      "/vendor/behavior-33582f4ccf040978.js",
+      "/vendor/behavior-061c93d375fc981e.js",
+      "/vendor/swiper-bundle.min.js",
+      "/vendor/behavior-473ee45b38fd4d62.js"
+    ],
+    "dataTextCount": 28
+  }
+]
